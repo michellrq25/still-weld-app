@@ -1,0 +1,168 @@
+{
+  "products": [
+    {
+      "brand": "ESAB",
+      "price": 1850,
+      "name": "Máquina de Soldar Inverter ESAB Rogue ES 150i",
+      "stock": 0,
+      "icon": "Flame",
+      "id": 1,
+      "image": "/images/products/máquina-de-soldar-inverter-esab-rogue-es-150i.jpg",
+      "description": "Máquina de soldar inverter profesional, portátil y potente. Ideal para electrodo revestido y TIG Live.",
+      "category": "Soldadura"
+    },
+    {
+      "brand": "INDURA",
+      "price": 1420,
+      "name": "Soldadora Inverter Indura Invertec 160 PRO",
+      "stock": 5,
+      "icon": "Flame",
+      "id": 2,
+      "image": "/images/products/soldadora-inverter-indura-invertec-160-pro.webp",
+      "description": "Excelente estabilidad de arco. Compacta, ligera y de bajo consumo eléctrico. Ideal para talleres.",
+      "category": "Soldadura"
+    },
+    {
+      "brand": "VICTOR",
+      "price": 4200,
+      "name": "Cortadora de Plasma Victor Cutmaster 40",
+      "stock": 3,
+      "icon": "Sparkles",
+      "id": 3,
+      "image": "/images/products/cortadora-de-plasma-victor-cutmaster-40.jpg",
+      "description": "Sistema de corte por plasma de alta precisión. Corta metales de hasta 12mm de espesor de forma limpia.",
+      "category": "Corte"
+    },
+    {
+      "brand": "ESAB",
+      "price": 580,
+      "name": "Careta de Soldar Fotosensible ESAB Savage A40",
+      "stock": 12,
+      "icon": "ShieldCheck",
+      "id": 4,
+      "image": "/images/products/careta-de-soldar-fotosensible-esab-savage-a40.jpg",
+      "description": "Careta fotosensible de alta tecnología. Sombra variable de 9 a 13 con sensor de respuesta ultrarrápido.",
+      "category": "EPP"
+    },
+    {
+      "id": 5,
+      "name": "Guantes de Cuero Cromo Reforzados para Soldador",
+      "category": "EPP",
+      "brand": "INDURA",
+      "price": 45,
+      "stock": 25,
+      "description": "Guantes de cuero de alta calidad con costuras de Kevlar resistentes al calor y a las chispas.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": 6,
+      "name": "Electrodos Cellocord AP 6011 Indura (5 Kg)",
+      "category": "Consumibles",
+      "brand": "INDURA",
+      "price": 135,
+      "stock": 40,
+      "description": "Electrodo celulósico de penetración profunda. Ideal para soldar tuberías y estructuras en cualquier posición.",
+      "icon": "Flame"
+    },
+    {
+      "id": 7,
+      "name": "Kit de Oxicorte Victor Performer Medium Duty",
+      "category": "Corte",
+      "brand": "VICTOR",
+      "price": 1150,
+      "stock": 4,
+      "description": "Equipo completo de oxicorte y soldadura con soplete, boquillas y reguladores certificados de alta seguridad.",
+      "icon": "Sparkles"
+    },
+    {
+      "id": 8,
+      "name": "Amoladora Angular DeWalt 4-1/2\" 800W D28111",
+      "category": "Herramientas",
+      "brand": "DEWALT",
+      "price": 320,
+      "stock": 15,
+      "description": "Herramienta industrial potente con protección contra sobrecargas y gatillo deslizante.",
+      "icon": "Wrench"
+    },
+    {
+      "id": 9,
+      "name": "Máquina de Soldar ESAB Rebel EM 215ic (MIG/MMA)",
+      "category": "Soldadura",
+      "brand": "ESAB",
+      "price": 6800,
+      "stock": 2,
+      "description": "Soldadora multiproceso con rendimiento industrial. Panel digital interactivo Smart MIG para fácil configuración.",
+      "icon": "Flame"
+    },
+    {
+      "id": 10,
+      "name": "Soldadora TIG Indura Invertec 200 TIG/MMA",
+      "category": "Soldadura",
+      "brand": "INDURA",
+      "price": 2450,
+      "stock": 4,
+      "description": "Equipo de alta frecuencia para soldaduras TIG de alta calidad en acero al carbono e inoxidable.",
+      "icon": "Flame"
+    },
+    {
+      "id": 11,
+      "name": "Respirador Reutilizable de Media Cara 3M Serie 6200",
+      "category": "EPP",
+      "brand": "3M",
+      "price": 85,
+      "stock": 30,
+      "description": "Arnés de cabeza de diseño confortable y repuestos de filtros de fácil acoplamiento. Protección respiratoria.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": 12,
+      "name": "Lentes de Seguridad Antiparra Nemesis Claros",
+      "category": "EPP",
+      "brand": "JACKSON",
+      "price": 35,
+      "stock": 50,
+      "description": "Protección ocular con diseño deportivo, lunas antipolvo y protección UV de alta resistencia.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": 13,
+      "name": "Alambre de Soldadura MIG ESAB Spoolarc 86 (15 Kg)",
+      "category": "Consumibles",
+      "brand": "ESAB",
+      "price": 280,
+      "stock": 20,
+      "description": "Alambre sólido de acero al carbono premium cobreado. Excelente alimentación y baja salpicadura.",
+      "icon": "Flame"
+    },
+    {
+      "id": 14,
+      "name": "Cepillo de Alambre de Acero con Mango de Madera",
+      "category": "Herramientas",
+      "brand": "TRAMONTINA",
+      "price": 18,
+      "stock": 60,
+      "description": "Herramienta de limpieza manual, cerdas de acero al carbono resistentes para remoción de escorias.",
+      "icon": "Wrench"
+    },
+    {
+      "id": 15,
+      "name": "Regulador de Presión para Oxígeno Victor EDGE 2.0",
+      "category": "Corte",
+      "brand": "VICTOR",
+      "price": 650,
+      "stock": 6,
+      "description": "Regulador monocuerpo de alta seguridad y flujo constante con manómetros protegidos contra impactos.",
+      "icon": "Sparkles"
+    },
+    {
+      "id": 16,
+      "name": "Boquillas de Corte de Acetileno Victor Serie 1-101",
+      "category": "Corte",
+      "brand": "VICTOR",
+      "price": 75,
+      "stock": 25,
+      "description": "Boquillas de repuesto de cobre puro para soplete de oxicorte Victor. Excelente durabilidad.",
+      "icon": "Sparkles"
+    }
+  ]
+}
