@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin, FileText } from 'lucide-react'
 
-import { CATEGORIES } from '../constants'
+import { CATEGORIES } from '../../constants'
 const CATEGORIES_FOOTER = CATEGORIES.slice(1);
 
 export default function Footer({
@@ -39,6 +39,7 @@ export default function Footer({
           <ul className="footer-links">
             <li><a href="#hero" onClick={(e) => { e.preventDefault(); scrollSection('hero'); }}>Inicio</a></li>
             <li><a href="#productos" onClick={(e) => { e.preventDefault(); scrollSection('productos'); }}>Catálogo</a></li>
+            <li><a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollSection('nosotros'); }}>Nosotros</a></li>
             <li><a href="#contacto" onClick={(e) => { e.preventDefault(); scrollSection('contacto'); }}>Contacto</a></li>
           </ul>
         </div>
@@ -61,7 +62,7 @@ export default function Footer({
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Still Weld. Software desarrollado por GalactiCode Devs. Todos los derechos reservados. Lima, Perú.</p>
+        <p>© 2026 Still Weld. Software desarrollado por GalactiCode Devs. Todos los derechos reservados. Lima, Perú.</p>
         <button className="reclamaciones-link-btn" onClick={() => setIsReclamacionesOpen(true)}>
           <FileText size={16} /> Libro de Reclamaciones
         </button>

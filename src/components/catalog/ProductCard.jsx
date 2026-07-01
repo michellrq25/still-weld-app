@@ -1,8 +1,8 @@
 import { Flame, Sparkles, ShieldCheck, Wrench } from 'lucide-react'
 
-import { IMAGE_BASE_PATH, STOCK_ALERT_THRESHOLD } from '../constants'
+import { IMAGE_BASE_PATH, STOCK_ALERT_THRESHOLD } from '../../constants'
 
-export default function ProductCard({ product, whatsappNumber }) {
+export default function ProductCard({ product, whatsappNumber, onImageClick }) {
   const handleCotizar = () => {
     const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${product.name}* (Marca: ${product.brand})\nPrecio Inc. IGV: S/ ${product.price.toFixed(2)}\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
     const encodedText = encodeURIComponent(message);
@@ -22,7 +22,10 @@ export default function ProductCard({ product, whatsappNumber }) {
       )}
 
 
-      <div className="product-image-container">
+      <div 
+        className={`product-image-container ${product.image ? 'clickable' : ''}`}
+        onClick={product.image ? () => onImageClick(product) : undefined}
+      >
         {product.image ? (
           <img 
             src={product.image.startsWith('/') ? product.image : `${IMAGE_BASE_PATH}/${product.image}`} 

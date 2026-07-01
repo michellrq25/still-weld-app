@@ -1,7 +1,7 @@
 import { Flame, Sparkles, ShieldCheck, Wrench, ShieldAlert } from 'lucide-react'
 import ProductCard from './ProductCard'
 
-import { CATEGORIES } from '../constants'
+import { CATEGORIES } from '../../constants'
 
 export default function ProductsCatalog({ 
   activeCategory, 
@@ -11,7 +11,8 @@ export default function ProductsCatalog({
   visibleCount, 
   setVisibleCount, 
   productsPerPage,
-  whatsappNumber 
+  whatsappNumber,
+  onImageClick
 }) {
   return (
     <section id="productos" style={{ scrollMarginTop: '100px' }}>
@@ -54,6 +55,7 @@ export default function ProductsCatalog({
               key={product.id} 
               product={product} 
               whatsappNumber={whatsappNumber} 
+              onImageClick={onImageClick}
             />
           ))
         ) : (

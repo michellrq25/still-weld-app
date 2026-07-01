@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Search, X, Menu } from 'lucide-react'
-import Logo from './Logo'
+import Logo from '../ui/Logo'
 
 export default function Header({ searchQuery, setSearchQuery, scrollSection }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,6 +44,7 @@ export default function Header({ searchQuery, setSearchQuery, scrollSection }) {
         <nav className={`nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
           <a href="#hero" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('hero'); }}>Inicio</a>
           <a href="#productos" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('productos'); }}>Productos</a>
+          <a href="#nosotros" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('nosotros'); }}>Nosotros</a>
           <a href="#contacto" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('contacto'); }}>Contacto</a>
         </nav>
 

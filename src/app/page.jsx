@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import CatalogWrapper from '../components/CatalogWrapper';
+import CatalogWrapper from '../components/catalog/CatalogWrapper';
 
 export default async function Page() {
   // Cargar productos en el servidor para SEO y velocidad de carga inicial
