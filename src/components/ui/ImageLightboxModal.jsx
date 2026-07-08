@@ -10,6 +10,7 @@ export default function ImageLightboxModal({
   productName, 
   productBrand, 
   productPrice, 
+  productDescription,
   onCotizar 
 }) {
 
@@ -75,6 +76,18 @@ export default function ImageLightboxModal({
           <div className="lightbox-info-text">
             <span className="lightbox-brand">{productBrand}</span>
             <h2 className="lightbox-name">{productName}</h2>
+            {productDescription && (
+              <p style={{ 
+                fontSize: '0.9rem', 
+                color: '#cccccc', 
+                marginTop: '8px', 
+                marginBottom: '14px', 
+                lineHeight: '1.4',
+                textAlign: 'left'
+              }}>
+                {productDescription}
+              </p>
+            )}
             <div className="lightbox-price">
               <span className="lightbox-price-label">Precio Inc. IGV</span>
               <span className="lightbox-price-value">S/ {productPrice.toFixed(2)}</span>

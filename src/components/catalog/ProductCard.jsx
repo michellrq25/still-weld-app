@@ -41,9 +41,6 @@ export default function ProductCard({ product, whatsappNumber, onImageClick }) {
       <div className="product-info">
         <span className="product-category">{product.category}</span>
         <h3 className="product-name">{product.name}</h3>
-        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '1.25rem', flexGrow: 1 }}>
-          {product.description}
-        </p>
         <div className="product-footer">
           <div className="product-price">
             <span className="price-label">Precio Inc. IGV</span>

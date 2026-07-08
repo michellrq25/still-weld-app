@@ -167,6 +167,7 @@ export default function CatalogWrapper({ initialProducts }) {
           productName={activeLightboxProduct.name}
           productBrand={activeLightboxProduct.brand}
           productPrice={activeLightboxProduct.price}
+          productDescription={activeLightboxProduct.description}
           onCotizar={() => handleCotizarProduct(activeLightboxProduct)}
         />
       )}
