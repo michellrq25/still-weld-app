@@ -62,6 +62,31 @@ export async function GET(request) {
       });
     }
 
+    if (!data.access_token) {
+      const noTokenHtml = `
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+          <title>Error de Autenticación</title>
+        </head>
+        <body style="font-family: sans-serif; padding: 2rem;">
+          <h2 style="color: red;">Error: No se recibió Token de Acceso</h2>
+          <p>GitHub no entregó un token de acceso válido. Esto puede deberse a que las credenciales (Client ID o Client Secret) configuradas en Vercel son incorrectas o no coinciden con la OAuth App de GitHub.</p>
+          <p>Respuesta detallada de GitHub:</p>
+          <pre style="background: #f4f4f4; padding: 1rem; border-radius: 4px;"><code>\${JSON.stringify(data, null, 2)}</code></pre>
+          <script>
+            if (window.opener) {
+              window.opener.postMessage("authorization:github:error:No access token received", "*");
+            }
+          </script>
+        </body>
+        </html>
+      `;
+      return new NextResponse(noTokenHtml, {
+        headers: { 'Content-Type': 'text/html; charset=utf-8' }
+      });
+    }
+
     const successHtml = `
       <!DOCTYPE html>
       <html lang="es">
