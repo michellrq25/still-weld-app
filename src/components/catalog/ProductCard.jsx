@@ -1,6 +1,6 @@
 import { Flame, Sparkles, ShieldCheck, Wrench } from 'lucide-react'
 
-import { IMAGE_BASE_PATH, STOCK_ALERT_THRESHOLD } from '../../constants'
+import { IMAGE_BASE_PATH } from '../../constants'
 
 export default function ProductCard({ product, whatsappNumber, onImageClick }) {
   const handleCotizar = () => {
@@ -12,14 +12,6 @@ export default function ProductCard({ product, whatsappNumber, onImageClick }) {
   return (
     <article className="product-card">
       <span className="product-badge-brand">{product.brand}</span>
-      {product.stock === 0 ? (
-        <span className="product-badge-stock bajo-pedido">Consultar disponibilidad</span>
-      ) : (
-
-        product.stock <= STOCK_ALERT_THRESHOLD && (
-          <span className="product-badge-stock">¡Últimas {product.stock} unidades!</span>
-        )
-      )}
 
 
       <div 
