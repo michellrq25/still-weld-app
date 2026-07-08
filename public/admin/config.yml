@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: michellrq25/still-weld-app # Repositorio de GitHub
+  branch: main
+  base_url: https://still-weld-app.vercel.app
+
+media_folder: "public/images/products"
+public_folder: "/images/products"
+
+collections:
+  - name: "products_config"
+    label: "Configuración"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Catálogo de Productos"
+        name: "products_list"
+        file: "public/products.json"
+        fields:
+          - label: "Productos"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.brand}}) - S/ {{fields.price}}"
+            fields:
+              - { label: "ID", name: "id", widget: "number", value_type: "int" }
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Categoría", name: "category", widget: "select", options: ["Soldadura", "Corte", "EPP", "Consumibles", "Herramientas"] }
+              - { label: "Marca", name: "brand", widget: "string" }
+              - { label: "Precio Inc. IGV", name: "price", widget: "number", value_type: "float" }
+              - { label: "Descripción", name: "description", widget: "text" }
+              - { label: "Icono Lucide", name: "icon", widget: "select", options: ["Flame", "Sparkles", "ShieldCheck", "Wrench"] }
+              - { label: "Imagen", name: "image", widget: "image", required: false }

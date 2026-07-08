@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"npm run dev:next\" \"npx decap-server\"",
+    "dev:next": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
