@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:next\" \"npx decap-server\"",
     "dev:next": "next dev",
-    "build": "next build",
+    "build": "node prepare-admin.cjs && next build",
     "start": "next start",
     "lint": "next lint",
     "add-product": "node add-product.js"

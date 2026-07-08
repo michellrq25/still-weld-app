@@ -1,3 +1,5 @@
+local_backend: false
+
 backend:
   name: github
   repo: michellrq25/still-weld-app # Repositorio de GitHub

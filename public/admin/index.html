@@ -4,32 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Administrador de Catálogo - Still Weld</title>
-  <!-- Script de Netlify Identity widget (opcional, pero se mantiene cargado por retrocompatibilidad) -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- Habilitar inicialización manual de Decap CMS -->
-  <script>
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    window.CMS_MANUAL_INIT = true;
-  </script>
-
-  <!-- Carga de Decap CMS -->
+  <!-- Carga de Decap CMS (se inicializa automáticamente leyendo config.yml) -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-  <!-- Inicializar con configuraciones dinámicas -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      CMS.init({
-        config: {
-          local_backend: isLocal,
-          backend: {
-            // El backend se comunica directamente con el origen actual (localhost o tu dominio en Vercel)
-            base_url: window.location.origin
-          }
-        }
-      });
-    });
-  </script>
 </body>
 </html>
