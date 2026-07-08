@@ -87,53 +87,11 @@ export async function GET(request) {
       });
     }
 
-    const successHtml = `
-      <!DOCTYPE html>
-      <html lang="es">
-      <head>
-        <title>Autenticado Correctamente</title>
-      </head>
-      <body>
-        <p>Autenticación exitosa. Cargando panel administrador...</p>
-        <script>
-          (function() {
-            const token = "${data.access_token}";
-            const messageData = {
-              token: token,
-              provider: "github"
-            };
-            
-            if (window.opener) {
-              // Enviar formato string (Netlify CMS / Decap CMS clásico)
-              window.opener.postMessage(
-                "authorization:github:success:" + JSON.stringify(messageData),
-                "*"
-              );
-              
-              // Enviar formato objeto (Decap CMS moderno)
-              window.opener.postMessage(
-                {
-                  provider: "github",
-                  type: "authorization",
-                  token: token
-                },
-                "*"
-              );
-              
-              window.close();
-            } else {
-              console.error("Error: window.opener es nulo.");
-              document.body.innerHTML = "<p style='color:red; font-family:sans-serif; text-align:center; padding-top:2rem;'>Error: No se pudo comunicar con la ventana principal. Por favor, cierra esta pestaña e intenta de nuevo.</p>";
-            }
-          })();
-        </script>
-      </body>
-      </html>
-    `;
-
-    return new NextResponse(successHtml, {
-      headers: { 'Content-Type': 'text/html; charset=utf-8' }
-    });
+    // Redirigir al panel de administración con el hash de acceso
+    // Decap CMS (corriendo en el popup redirigido) procesará el hash,
+    // enviará el postMessage a la ventana principal de forma nativa y se cerrará solo.
+    const redirectUrl = `${protocol}://${host}/admin/index.html#access_token=${data.access_token}&token_type=bearer`;
+    return NextResponse.redirect(redirectUrl);
 
   } catch (error) {
     const catchErrorHtml = `
@@ -142,12 +100,9 @@ export async function GET(request) {
       <head>
         <title>Error de Servidor</title>
       </head>
-      <body>
-        <p>Error interno: ${error.message}</p>
-        <script>
-          window.opener.postMessage("authorization:github:error:${error.message}", "*");
-          window.close();
-        </script>
+      <body style="font-family: sans-serif; padding: 2rem; text-align: center;">
+        <h2 style="color: red;">Error interno del servidor</h2>
+        <p>${error.message}</p>
       </body>
       </html>
     `;

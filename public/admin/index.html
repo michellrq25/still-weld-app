@@ -7,19 +7,6 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- Script para depurar y escuchar mensajes de autenticación en la ventana principal -->
-  <script>
-    window.addEventListener("message", (event) => {
-      console.log("Mensaje recibido de:", event.origin);
-      console.log("Datos:", event.data);
-      
-      // Mostrar alerta si contiene el token para verificar que llegó
-      if (typeof event.data === 'string' && event.data.includes('authorization:')) {
-        alert("Debug Ventana Principal: Mensaje recibido de " + event.origin + "\nDatos: " + event.data);
-      }
-    });
-  </script>
-
   <!-- Carga de Decap CMS (se inicializa automáticamente leyendo config.yml) -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
