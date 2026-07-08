@@ -1,26 +1,26 @@
 {
   "products": [
     {
-      "brand": "ESAB",
+      "brand": "Jackson®️",
       "price": 1850,
-      "name": "Máquina de Soldar Inverter ESAB Rogue ES 150i",
+      "name": "TAFILETE JACKSON SAFETY 20696",
       "stock": 0,
       "icon": "Flame",
       "id": 1,
-      "image": "/images/products/maquina-de-soldar-inverter-esab-rogue-es-150i.jpg",
-      "description": "Máquina de soldar inverter profesional, portátil y potente. Ideal para electrodo revestido y TIG Live.",
-      "category": "Soldadura"
+      "image": "/images/products/tafilete-jackson-safety-20696.jpeg",
+      "description": "El trinquete de gran tamaño con empuñadura de goma suave permite un ajuste sencillo incluso con guantes.\nEl Comfort Cradle extraíble es un reposacabezas pivotante que se adapta a cualquier cabeza para brindar el máximo grado de comodidad.\nEl deslizador de 3 posiciones ajusta la distancia de la lente a los ojos para una visión precisa.\nAjuste de la correa superior: permite subir o bajar el arnés para una máxima comodidad y rendimiento.\nLa cinta para el sudor ayuda a absorber la transpiración y evita que el sudor interfiera con la visión.\nEl bloqueo vertical elimina el deslizamiento del casco.\nEl sistema de bloqueo de tuerca mantiene los componentes unidos incluso cuando se afloja el soporte.\nCompatible con los cascos de soldadura HaloX, HSL Series y Nitro Series.",
+      "category": "EPP"
     },
     {
-      "brand": "INDURA",
+      "brand": "Flange Wizard®️",
       "price": 1420,
-      "name": "Soldadora Inverter Indura Invertec 160 PRO",
+      "name": "FAJA DE TRAZO DE 2-16 PULG WIZARD WRAP",
       "stock": 5,
       "icon": "Flame",
       "id": 2,
-      "image": "/images/products/soldadora-inverter-indura-invertec-160-pro.webp",
-      "description": "Excelente estabilidad de arco. Compacta, ligera y de bajo consumo eléctrico. Ideal para talleres.",
-      "category": "Soldadura"
+      "image": "/images/products/faja-de-trazo-de-2-16-pulg-wizard-wrap.jpeg",
+      "description": "La cinta métrica Flange Wizard®️ Medium Pipe Wrap mide 60 pulgadas de largo por 3-7/8 pulgadas de ancho y ayuda a medir tuberías de 2 a 16 pulgadas de diámetro. La cinta métrica serigrafiada incluye una escala de circunferencia y de cuartos, además del diámetro de la tubería impreso en el exterior. La cinta viene empaquetada en un tubo reutilizable lo suficientemente resistente para soportar el uso diario en una caja de herramientas. Los bordes rectos y gruesos permiten un marcado más fácil y preciso, y cuentan con escalas decimales equivalentes a un grado. Todas las cintas métricas Flange Wizard®️ están libres de asbesto, son resistentes al aceite, la gasolina, el queroseno, el agua y el agua salada, y pueden soportar temperaturas de hasta 360 grados Fahrenheit.",
+      "category": "Herramientas"
     },
     {
       "brand": "VICTOR",
