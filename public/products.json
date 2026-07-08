@@ -8,7 +8,7 @@
       "icon": "Flame",
       "id": 1,
       "image": "/images/products/tafilete-jackson-safety-20696.jpeg",
-      "description": "El trinquete de gran tamaño con empuñadura de goma suave permite un ajuste sencillo incluso con guantes.\nEl Comfort Cradle extraíble es un reposacabezas pivotante que se adapta a cualquier cabeza para brindar el máximo grado de comodidad.\nEl deslizador de 3 posiciones ajusta la distancia de la lente a los ojos para una visión precisa.\nAjuste de la correa superior: permite subir o bajar el arnés para una máxima comodidad y rendimiento.\nLa cinta para el sudor ayuda a absorber la transpiración y evita que el sudor interfiera con la visión.\nEl bloqueo vertical elimina el deslizamiento del casco.\nEl sistema de bloqueo de tuerca mantiene los componentes unidos incluso cuando se afloja el soporte.\nCompatible con los cascos de soldadura HaloX, HSL Series y Nitro Series.",
+      "description": "Arnés de repuesto premium Jackson®️ 370 para cascos de soldar (Halo-X, HSL y Nitro). Diseñado para máxima comodidad y estabilidad, cuenta con un trinquete de gran tamaño ajustable con guantes, reposacabezas pivotante adaptable y correa superior regulable. Incluye banda para el sudor, bloqueo vertical anti-deslizamiento y un deslizador de 3 posiciones para ajustar la distancia del lente a los ojos de forma precisa.",
       "category": "EPP"
     },
     {
@@ -19,150 +19,129 @@
       "icon": "Flame",
       "id": 2,
       "image": "/images/products/faja-de-trazo-de-2-16-pulg-wizard-wrap.jpeg",
-      "description": "La cinta métrica Flange Wizard®️ Medium Pipe Wrap mide 60 pulgadas de largo por 3-7/8 pulgadas de ancho y ayuda a medir tuberías de 2 a 16 pulgadas de diámetro. La cinta métrica serigrafiada incluye una escala de circunferencia y de cuartos, además del diámetro de la tubería impreso en el exterior. La cinta viene empaquetada en un tubo reutilizable lo suficientemente resistente para soportar el uso diario en una caja de herramientas. Los bordes rectos y gruesos permiten un marcado más fácil y preciso, y cuentan con escalas decimales equivalentes a un grado. Todas las cintas métricas Flange Wizard®️ están libres de asbesto, son resistentes al aceite, la gasolina, el queroseno, el agua y el agua salada, y pueden soportar temperaturas de hasta 360 grados Fahrenheit.",
+      "description": "Cinta métrica Flange Wizard®️ Medium Pipe Wrap (60\" x 3-7/8\") para medir y marcar tuberías de 2\" a 16\" de diámetro. Cuenta con escalas serigrafiadas de circunferencia, cuartos y diámetro, además de bordes rectos y gruesos para trazos precisos. Fabricada sin asbesto, es altamente resistente al agua, aceite, gasolina y temperaturas de hasta 180°C (360°F). Incluye estuche protector reutilizable.",
       "category": "Herramientas"
     },
     {
-      "brand": "VICTOR",
+      "brand": "Flange Wizard®️",
       "price": 4200,
-      "name": "Cortadora de Plasma Victor Cutmaster 40",
+      "name": "FAJA DE TRAZO 6-30 PULG WIZARD WRAP",
       "stock": 3,
       "icon": "Sparkles",
       "id": 3,
-      "image": "/images/products/cortadora-de-plasma-victor-cutmaster-40.jpg",
-      "description": "Sistema de corte por plasma de alta precisión. Corta metales de hasta 12mm de espesor de forma limpia.",
-      "category": "Corte"
+      "image": "/images/products/faja-de-trazo-6-30-pulg-wizard-wrap.jpeg",
+      "description": "Cinta métrica Flange Wizard®️ Large Pipe Wrap (120 cm x 5.25 cm) para medir y marcar tuberías de 6\" a 30\" de diámetro. Cuenta con escalas serigrafiadas de circunferencia, cuartos y diámetro, con bordes gruesos para trazos exactos. Libre de asbesto y altamente resistente a hidrocarburos, agua marina y temperaturas de hasta 180°C (360°F). Incluye estuche protector reutilizable.",
+      "category": "Herramientas"
     },
     {
-      "brand": "ESAB",
+      "brand": "Flange Wizard®️",
       "price": 580,
-      "name": "Careta de Soldar Fotosensible ESAB Savage A40",
+      "name": "FAJA DE TRAZO DE 12-48\" WIZARD WRAP",
       "stock": 12,
       "icon": "ShieldCheck",
       "id": 4,
-      "image": "/images/products/careta-de-soldar-fotosensible-esab-savage-a40.jpg",
-      "description": "Careta fotosensible de alta tecnología. Sombra variable de 9 a 13 con sensor de respuesta ultrarrápido.",
+      "image": "/images/products/faja-de-trazo-de-12-48-wizard-wrap.jpeg",
+      "description": "Cinta métrica extragrande Flange Wizard®️ Extra Large Pipe Wrap (180 cm x 7 cm) para medir y marcar tuberías de 12\" a 48\" de diámetro. Cuenta con escalas serigrafiadas de circunferencia, cuartos y diámetro, con bordes gruesos para trazos exactos. Libre de asbesto y altamente resistente a hidrocarburos, agua marina y temperaturas de hasta 180°C (360°F). Incluye estuche protector reutilizable.",
+      "category": "Herramientas"
+    },
+    {
+      "brand": "Tillman",
+      "price": 45,
+      "name": "GUANTES DE SOLDAR MIG TIG TILMAN 1945L",
+      "stock": 25,
+      "icon": "ShieldCheck",
+      "id": 5,
+      "image": "/images/products/guantes-de-soldar-mig-tig-tilman-1945l.jpeg",
+      "description": "Guantes Tillman®️ 1940 para soldadura MIG y metalmecánica, con protección certificada ANSI A2 contra impactos (TPR en el dorso) y A4 contra cortes. Fabricados en suave piel de cabra premium con palma reforzada, costuras de Kevlar®️ y puño de vacuno de 12.7 cm. Cuentan con tratamiento Watershield™️ que repele la humedad y son ideales para forja, astilleros y fabricación de metales.",
       "category": "EPP"
     },
     {
-      "id": 5,
-      "name": "Guantes de Cuero Cromo Reforzados para Soldador",
-      "category": "EPP",
-      "brand": "INDURA",
-      "price": 45,
-      "stock": 25,
-      "description": "Guantes de cuero de alta calidad con costuras de Kevlar resistentes al calor y a las chispas.",
-      "icon": "ShieldCheck"
-    },
-    {
-      "id": 6,
-      "name": "Electrodos Cellocord AP 6011 Indura (5 Kg)",
-      "category": "Consumibles",
-      "brand": "INDURA",
+      "brand": "Trust",
       "price": 135,
+      "name": "GUANTES DE SOLDAR MIG SMAW TRUST 1015L",
       "stock": 40,
-      "description": "Electrodo celulósico de penetración profunda. Ideal para soldar tuberías y estructuras en cualquier posición.",
-      "icon": "Flame"
+      "icon": "Flame",
+      "id": 6,
+      "image": "/images/products/guantes-de-soldar-mig-smaw-trust-1015l.jpeg",
+      "description": "Guantes de soldadura MIG Trust 1015 con palma de piel de cabra premium acolchada y dedo índice sin costuras para máxima destreza. Su dorso y puño de 4\" de piel de vacuno, junto al forro polar interno, ofrecen gran resistencia al calor. Cuentan con parches Flow Patch para confort y durabilidad, costuras de Kevlar®️, refuerzo en pulgar/palma y ajuste elástico. Disponibles de S a 2XL.",
+      "category": "EPP"
     },
     {
-      "id": 7,
-      "name": "Kit de Oxicorte Victor Performer Medium Duty",
-      "category": "Corte",
-      "brand": "VICTOR",
+      "brand": "TEFUAWE",
       "price": 1150,
+      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE BLACK FLP 2X4",
       "stock": 4,
-      "description": "Equipo completo de oxicorte y soldadura con soplete, boquillas y reguladores certificados de alta seguridad.",
-      "icon": "Sparkles"
+      "icon": "Sparkles",
+      "id": 7,
+      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-black-flp-2x4.jpeg",
+      "description": "Máscara de soldar Pipeliner Tefuawe Black FLP (2x4\") fabricada en fibra de vidrio premium resistente a impactos y humedad. Su diseño ergonómico ultraligero evita la presión en el cuello y el pecho, permitiendo mayor compatibilidad con respiradores. Cuenta con arnés de trinquete ajustable y cumple con certificaciones CE, ANSI y CSA. Incluye bolsa de transporte impermeable.",
+      "category": "EPP"
     },
     {
-      "id": 8,
-      "name": "Amoladora Angular DeWalt 4-1/2\" 800W D28111",
-      "category": "Herramientas",
-      "brand": "DEWALT",
+      "brand": "TEFUAWE",
       "price": 320,
+      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE GREEN FLP 2X4",
       "stock": 15,
-      "description": "Herramienta industrial potente con protección contra sobrecargas y gatillo deslizante.",
-      "icon": "Wrench"
+      "icon": "Wrench",
+      "id": 8,
+      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-green-flp-2x4.jpeg",
+      "description": "Máscara de soldar Pipeliner Tefuawe Green FLP (2x4\") fabricada en fibra de vidrio premium resistente a impactos y humedad. Su diseño ergonómico ultraligero evita la presión en el cuello y el pecho, permitiendo mayor compatibilidad con respiradores. Cuenta con arnés de trinquete ajustable y cumple con certificaciones CE, ANSI y CSA. Incluye bolsa de transporte impermeable.",
+      "category": "EPP"
     },
     {
-      "id": 9,
-      "name": "Máquina de Soldar ESAB Rebel EM 215ic (MIG/MMA)",
-      "category": "Soldadura",
-      "brand": "ESAB",
+      "brand": "TEFUAWE",
       "price": 6800,
+      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE SILVER FLP 2X4",
       "stock": 2,
-      "description": "Soldadora multiproceso con rendimiento industrial. Panel digital interactivo Smart MIG para fácil configuración.",
-      "icon": "Flame"
+      "icon": "Flame",
+      "id": 9,
+      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-silver-flp-2x4.jpeg",
+      "description": "Máscara de soldar Pipeliner Tefuawe Silver FLP (2x4\") fabricada en fibra de vidrio premium resistente a impactos y humedad. Su diseño ergonómico ultraligero evita la presión en el cuello y el pecho, permitiendo mayor compatibilidad con respiradores. Cuenta con arnés de trinquete ajustable y cumple con certificaciones CE, ANSI y CSA. Incluye bolsa de transporte impermeable.",
+      "category": "EPP"
     },
     {
-      "id": 10,
-      "name": "Soldadora TIG Indura Invertec 200 TIG/MMA",
-      "category": "Soldadura",
-      "brand": "INDURA",
+      "brand": "Sellstrom",
       "price": 2450,
+      "name": "VISOR ABATIBLE SELLSTROM S27300",
       "stock": 4,
-      "description": "Equipo de alta frecuencia para soldaduras TIG de alta calidad en acero al carbono e inoxidable.",
-      "icon": "Flame"
+      "icon": "Flame",
+      "id": 10,
+      "image": "/images/products/visor-abatible-sellstrom-s27300.jpeg",
+      "description": "Visor frontal abatible Sellstrom S27300, fabricado en EE. UU. con nailon ultraduradero. Permite añadir un sistema de elevación (2\" x 4.25\") para placas de filtro pasivas o electrónicas (ADF). Es compatible con cascos Sellstrom, Fiber-Metal, Jackson Safety y Hobart. Incluye kit completo de montaje con placa de policarbonato, junta y resorte (filtro no incluido).",
+      "category": "EPP"
     },
     {
-      "id": 11,
-      "name": "Respirador Reutilizable de Media Cara 3M Serie 6200",
-      "category": "EPP",
-      "brand": "3M",
+      "brand": "USA PRO TOOLS",
       "price": 85,
+      "name": "RODILLERA ULTRAFLEX  ANTIDESLIZANTE GRIS USA PRO TOOLS",
       "stock": 30,
-      "description": "Arnés de cabeza de diseño confortable y repuestos de filtros de fácil acoplamiento. Protección respiratoria.",
-      "icon": "ShieldCheck"
+      "icon": "ShieldCheck",
+      "id": 11,
+      "image": "/images/products/rodillera-ultraflex-antideslizante-gris-usa-pro-tools.jpeg",
+      "description": "Rodillera Ultraflex antideslizante gris de la marca americana USA PRO TOOLS, ideal para construcción, metalmecánica y trabajos pesados. Cuenta con una carcasa exterior rígida que asegura tracción sin rayar el suelo y un núcleo de gel con espuma de alta densidad para máxima amortiguación y reducción de fatiga. Su diseño ergonómico distribuye el peso de manera uniforme, mientras que su fijación de doble correa ajustable evita que se deslice durante el uso prolongado.",
+      "category": "EPP"
     },
     {
-      "id": 12,
-      "name": "Lentes de Seguridad Antiparra Nemesis Claros",
-      "category": "EPP",
-      "brand": "JACKSON",
+      "brand": "PROFAX",
       "price": 35,
+      "name": "ANTORCHA MIG/FCAW PROFAX M400-116-15",
       "stock": 50,
-      "description": "Protección ocular con diseño deportivo, lunas antipolvo y protección UV de alta resistencia.",
-      "icon": "ShieldCheck"
+      "icon": "ShieldCheck",
+      "id": 12,
+      "image": "/images/products/antorcha-mig-fcaw-profax-m400-116-15.jpeg",
+      "description": "Antorcha MIG/FCAW PROFAX M400-116-15 de calidad Premium (fabricada en EE. UU.). Cuenta con una capacidad industrial de 400 A, cable de 15 pies (4.5 m) para excelente movilidad y está optimizada para alambre de 1/16\" (1.6 mm). Equipada con conector directo tipo Miller, su mango ergonómico robusto con resortes de soporte reduce la fatiga y prolonga la vida útil del cable en ciclos de trabajo continuo.",
+      "category": "Soldadura"
     },
     {
-      "id": 13,
-      "name": "Alambre de Soldadura MIG ESAB Spoolarc 86 (15 Kg)",
-      "category": "Consumibles",
-      "brand": "ESAB",
+      "brand": "STILL WELD",
       "price": 280,
+      "name": "FOTOSENCIBLE BLUEFILTER MTL- 2418 SHADE 11",
       "stock": 20,
-      "description": "Alambre sólido de acero al carbono premium cobreado. Excelente alimentación y baja salpicadura.",
-      "icon": "Flame"
-    },
-    {
-      "id": 14,
-      "name": "Cepillo de Alambre de Acero con Mango de Madera",
-      "category": "Herramientas",
-      "brand": "TRAMONTINA",
-      "price": 18,
-      "stock": 60,
-      "description": "Herramienta de limpieza manual, cerdas de acero al carbono resistentes para remoción de escorias.",
-      "icon": "Wrench"
-    },
-    {
-      "id": 15,
-      "name": "Regulador de Presión para Oxígeno Victor EDGE 2.0",
-      "category": "Corte",
-      "brand": "VICTOR",
-      "price": 650,
-      "stock": 6,
-      "description": "Regulador monocuerpo de alta seguridad y flujo constante con manómetros protegidos contra impactos.",
-      "icon": "Sparkles"
-    },
-    {
-      "id": 16,
-      "name": "Boquillas de Corte de Acetileno Victor Serie 1-101",
-      "category": "Corte",
-      "brand": "VICTOR",
-      "price": 75,
-      "stock": 25,
-      "description": "Boquillas de repuesto de cobre puro para soplete de oxicorte Victor. Excelente durabilidad.",
-      "icon": "Sparkles"
+      "icon": "Flame",
+      "id": 13,
+      "image": "/images/products/fotosencible-bluefilter-mtl-2418-shade-11.jpeg",
+      "description": "Filtro fotosensible STILL WELD®️ BlueFilter MTL-2418 con sombra fija DIN 11 (estado claro DIN 3). Posee un área de visión estándar de 108 x 5.77 mm compatible con la mayoría de las caretas del mercado. Cuenta con certificaciones ANSI Z87.1 y CE para máxima protección UV/IR y resistencia a impactos. Ideal para procesos MMA/Electrodo y MIG/MAG, respaldado por 1 año de garantía.",
+      "category": "EPP"
     }
   ]
 }
