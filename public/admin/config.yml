@@ -5,6 +5,7 @@ backend:
   repo: michellrq25/still-weld-app # Repositorio de GitHub
   branch: main
   base_url: https://still-weld-app.vercel.app
+  auth_endpoint: api/oauth
 
 media_folder: "public/images/products"
 public_folder: "/images/products"
