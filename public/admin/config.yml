@@ -2,7 +2,7 @@ local_backend: true
 
 backend:
   name: github
-  repo: TU_USUARIO_GITHUB/TU_REPOSITORIO_GITHUB # Reemplazar con tu usuario/repositorio de GitHub
+  repo: michellrq25/still-weld-app # Reemplazar con tu usuario/repositorio de GitHub
   branch: main
   base_url: https://still-weld-app.vercel.app
 
