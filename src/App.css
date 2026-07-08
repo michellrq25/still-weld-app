@@ -1648,7 +1648,7 @@
 /* --- MOBILE LIGHTBOX RESPONSIVENESS --- */
 @media (max-width: 768px) {
   .lightbox-overlay {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 
   .lightbox-close-btn {
@@ -1664,7 +1664,7 @@
   }
 
   .lightbox-content {
-    max-height: 90vh;
+    max-height: 95vh;
     overflow-y: auto;
   }
 
@@ -1676,7 +1676,7 @@
   }
 
   .lightbox-image {
-    max-height: 30vh;
+    max-height: 36vh;
     max-width: 100%;
     height: auto;
     width: auto;

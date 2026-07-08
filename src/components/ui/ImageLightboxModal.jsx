@@ -86,9 +86,9 @@ export default function ImageLightboxModal({
             <h2 className="lightbox-name">{productName}</h2>
             {productDescription && (
               (() => {
-                const shouldTruncate = productDescription.length > 90;
+                const shouldTruncate = productDescription.length > 150;
                 const displayText = shouldTruncate && !isExpanded
-                  ? `${productDescription.slice(0, 90)}...`
+                  ? `${productDescription.slice(0, 150)}...`
                   : productDescription;
 
                 return (
