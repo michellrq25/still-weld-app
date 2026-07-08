@@ -1,18 +1,26 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
-export default function ImageLightboxModal({ 
-  isOpen, 
-  onClose, 
-  imageSrc, 
-  productName, 
-  productBrand, 
-  productPrice, 
+export default function ImageLightboxModal({
+  isOpen,
+  onClose,
+  imageSrc,
+  productName,
+  productBrand,
+  productPrice,
   productDescription,
-  onCotizar 
+  onCotizar
 }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Resetear el estado expandido cuando el modal se cierra o cambia de producto
+  useEffect(() => {
+    if (!isOpen) {
+      setIsExpanded(false);
+    }
+  }, [isOpen]);
 
   // Escuchar la tecla "Escape" para cerrar el modal
   useEffect(() => {
@@ -43,31 +51,31 @@ export default function ImageLightboxModal({
   if (!isOpen) return null;
 
   return (
-    <div 
-      className="lightbox-overlay active" 
+    <div
+      className="lightbox-overlay active"
       onClick={onClose}
       aria-modal="true"
       role="dialog"
     >
       {/* Contenido del modal */}
-      <div 
-        className="lightbox-content" 
+      <div
+        className="lightbox-content"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Botón de Cierre Flotante - Ubicado adentro para compartir el mismo contexto de apilamiento GPU */}
-        <button 
-          className="lightbox-close-btn" 
-          onClick={onClose} 
+        {/* Botón de Cierre Flotante */}
+        <button
+          className="lightbox-close-btn"
+          onClick={onClose}
           aria-label="Cerrar modal"
         >
           <X size={24} />
         </button>
 
         <div className="lightbox-image-container">
-          <img 
-            src={imageSrc} 
-            alt={productName} 
-            className="lightbox-image" 
+          <img
+            src={imageSrc}
+            alt={productName}
+            className="lightbox-image"
           />
         </div>
 
@@ -77,16 +85,44 @@ export default function ImageLightboxModal({
             <span className="lightbox-brand">{productBrand}</span>
             <h2 className="lightbox-name">{productName}</h2>
             {productDescription && (
-              <p style={{ 
-                fontSize: '0.9rem', 
-                color: '#cccccc', 
-                marginTop: '8px', 
-                marginBottom: '14px', 
-                lineHeight: '1.4',
-                textAlign: 'left'
-              }}>
-                {productDescription}
-              </p>
+              (() => {
+                const shouldTruncate = productDescription.length > 90;
+                const displayText = shouldTruncate && !isExpanded
+                  ? `${productDescription.slice(0, 90)}...`
+                  : productDescription;
+
+                return (
+                  <p style={{
+                    fontSize: '0.9rem',
+                    color: '#cccccc',
+                    marginTop: '8px',
+                    marginBottom: '14px',
+                    lineHeight: '1.4',
+                    textAlign: 'left'
+                  }}>
+                    {displayText}
+                    {shouldTruncate && (
+                      <button
+                        onClick={() => setIsExpanded(!isExpanded)}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          color: 'var(--primary, #f59e0b)',
+                          padding: 0,
+                          marginLeft: '6px',
+                          cursor: 'pointer',
+                          fontWeight: 600,
+                          fontSize: '0.85rem',
+                          textDecoration: 'underline',
+                          display: 'inline-block'
+                        }}
+                      >
+                        {isExpanded ? 'Ver menos' : 'Leer más'}
+                      </button>
+                    )}
+                  </p>
+                );
+              })()
             )}
             <div className="lightbox-price">
               <span className="lightbox-price-label">Precio Inc. IGV</span>
@@ -94,8 +130,8 @@ export default function ImageLightboxModal({
             </div>
           </div>
 
-          <button 
-            className="lightbox-cotizar-btn" 
+          <button
+            className="lightbox-cotizar-btn"
             onClick={onCotizar}
             title="Cotizar por WhatsApp"
           >
