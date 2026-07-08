@@ -87,6 +87,9 @@ export async function GET(request) {
       });
     }
 
+    const host = request.headers.get('host') || 'still-weld-app.vercel.app';
+    const protocol = host.includes('localhost') || host.includes('127.0.0.1') ? 'http' : 'https';
+
     // Redirigir al panel de administración con el hash de acceso
     // Decap CMS (corriendo en el popup redirigido) procesará el hash,
     // enviará el postMessage a la ventana principal de forma nativa y se cerrará solo.
