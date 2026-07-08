@@ -1663,12 +1663,26 @@
     z-index: 9999 !important;
   }
 
+  .lightbox-content {
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
   .lightbox-image-container {
     padding: 1rem;
+    height: auto;
+    min-height: 200px;
+    flex: none;
   }
 
   .lightbox-image {
-    max-height: 50vh;
+    max-height: 40vh;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
   }
 
   .lightbox-info-panel {
