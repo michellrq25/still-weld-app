@@ -72,16 +72,34 @@ export async function GET(request) {
         <p>Autenticación exitosa. Cargando panel administrador...</p>
         <script>
           (function() {
+            const token = "${data.access_token}";
             const messageData = {
-              token: "${data.access_token}",
+              token: token,
               provider: "github"
             };
             
-            window.opener.postMessage(
-              "authorization:github:success:" + JSON.stringify(messageData),
-              "*"
-            );
-            window.close();
+            if (window.opener) {
+              // Enviar formato string (Netlify CMS / Decap CMS clásico)
+              window.opener.postMessage(
+                "authorization:github:success:" + JSON.stringify(messageData),
+                "*"
+              );
+              
+              // Enviar formato objeto (Decap CMS moderno)
+              window.opener.postMessage(
+                {
+                  provider: "github",
+                  type: "authorization",
+                  token: token
+                },
+                "*"
+              );
+              
+              window.close();
+            } else {
+              console.error("Error: window.opener es nulo.");
+              document.body.innerHTML = "<p style='color:red; font-family:sans-serif; text-align:center; padding-top:2rem;'>Error: No se pudo comunicar con la ventana principal. Por favor, cierra esta pestaña e intenta de nuevo.</p>";
+            }
           })();
         </script>
       </body>
