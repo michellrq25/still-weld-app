@@ -6,6 +6,54 @@
   <title>Administrador de Catálogo - Still Weld</title>
 </head>
 <body>
+  <!-- Consola de depuración en pantalla -->
+  <div id="debug-console" style="position: fixed; bottom: 10px; right: 10px; width: 380px; max-height: 250px; background: rgba(13, 14, 18, 0.95); color: #00ff00; font-family: monospace; font-size: 11px; padding: 12px; border-radius: 6px; overflow-y: auto; z-index: 100000; border: 1.5px solid #25d366; pointer-events: none; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+    <div style="font-weight: bold; border-bottom: 1px solid #25d366; padding-bottom: 4px; margin-bottom: 6px; color: #25d366;">=== CONSOLA DE DIAGNÓSTICO ===</div>
+  </div>
+  <script>
+    (function() {
+      const debugDiv = document.getElementById('debug-console');
+      function logToScreen(msg, type = 'info') {
+        const color = type === 'error' ? '#ff4d4d' : (type === 'warn' ? '#ffcc00' : '#00ff00');
+        const item = document.createElement('div');
+        item.style.color = color;
+        item.style.marginBottom = '4px';
+        item.style.wordBreak = 'break-all';
+        item.textContent = "[" + new Date().toLocaleTimeString() + "] " + msg;
+        debugDiv.appendChild(item);
+        debugDiv.scrollTop = debugDiv.scrollHeight;
+      }
+      
+      // Capturar errores no controlados
+      window.onerror = function(message, source, lineno, colno, error) {
+        logToScreen(message + " (" + source.split('/').pop() + ":" + lineno + ")", 'error');
+        return false;
+      };
+      
+      window.addEventListener('unhandledrejection', function(event) {
+        logToScreen("Promesa rechazada: " + event.reason, 'error');
+      });
+
+      // Sobrescribir console.error y console.warn
+      const oldError = console.error;
+      console.error = function(...args) {
+        logToScreen(args.join(' '), 'error');
+        oldError.apply(console, args);
+      };
+      
+      const oldWarn = console.warn;
+      console.warn = function(...args) {
+        logToScreen(args.join(' '), 'warn');
+        oldWarn.apply(console, args);
+      };
+
+      // Escuchar todos los postMessage recibidos
+      window.addEventListener("message", (event) => {
+        logToScreen("Recibido de " + event.origin + ": " + JSON.stringify(event.data).substring(0, 60) + "...");
+      });
+    })();
+  </script>
+
   <!-- Carga de Decap CMS (se inicializa automáticamente leyendo config.yml) -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
