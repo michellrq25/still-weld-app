@@ -104,6 +104,8 @@ export async function GET(request) {
             };
             
             if (window.opener) {
+              alert("Debug: Ventana principal detectada. Enviando token: " + token.substring(0, 5) + "...");
+              
               // Enviar formato string (Netlify CMS / Decap CMS clásico)
               window.opener.postMessage(
                 "authorization:github:success:" + JSON.stringify(messageData),
