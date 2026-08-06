@@ -31,6 +31,5 @@ collections:
               - { label: "Categoría", name: "category", widget: "select", options: ["Soldadura", "Corte", "EPP", "Consumibles", "Herramientas"] }
               - { label: "Marca", name: "brand", widget: "string" }
               - { label: "Precio Inc. IGV", name: "price", widget: "number", value_type: "float" }
-              - { label: "Descripción", name: "description", widget: "text" }
               - { label: "Icono Lucide", name: "icon", widget: "select", options: ["Flame", "Sparkles", "ShieldCheck", "Wrench"] }
               - { label: "Imagen", name: "image", widget: "image", required: false }

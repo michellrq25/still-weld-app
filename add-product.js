@@ -41,8 +41,6 @@ async function main() {
     const priceInput = await askQuestion("Precio Inc. IGV (ej. 650 o 75.5): ");
     const price = parseFloat(priceInput) || 0;
     
-    const description = await askQuestion("Descripción corta: ");
-    
     console.log("\nIconos de repuesto si no hay foto: Flame, Sparkles, ShieldCheck, Wrench");
     const icon = await askQuestion("Icono (por defecto Flame): ");
     
@@ -85,7 +83,6 @@ async function main() {
       category: category || "Soldadura",
       brand: brand || "Generico",
       price,
-      description,
       icon: icon || "Flame"
     };
 

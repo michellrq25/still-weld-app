@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { X } from 'lucide-react';
 
 export default function ImageLightboxModal({
@@ -10,18 +10,8 @@ export default function ImageLightboxModal({
   productName,
   productBrand,
   productPrice,
-  productDescription,
   onCotizar
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  // Resetear el estado expandido cuando el modal se cierra o cambia de producto
-  useEffect(() => {
-    if (!isOpen) {
-      setIsExpanded(false);
-    }
-  }, [isOpen]);
-
   // Escuchar la tecla "Escape" para cerrar el modal
   useEffect(() => {
     if (!isOpen) return;
@@ -84,46 +74,6 @@ export default function ImageLightboxModal({
           <div className="lightbox-info-text">
             <span className="lightbox-brand">{productBrand}</span>
             <h2 className="lightbox-name">{productName}</h2>
-            {productDescription && (
-              (() => {
-                const shouldTruncate = productDescription.length > 150;
-                const displayText = shouldTruncate && !isExpanded
-                  ? `${productDescription.slice(0, 150)}...`
-                  : productDescription;
-
-                return (
-                  <p style={{
-                    fontSize: '0.9rem',
-                    color: '#cccccc',
-                    marginTop: '8px',
-                    marginBottom: '14px',
-                    lineHeight: '1.4',
-                    textAlign: 'left'
-                  }}>
-                    {displayText}
-                    {shouldTruncate && (
-                      <button
-                        onClick={() => setIsExpanded(!isExpanded)}
-                        style={{
-                          background: 'none',
-                          border: 'none',
-                          color: 'var(--primary, #f59e0b)',
-                          padding: 0,
-                          marginLeft: '6px',
-                          cursor: 'pointer',
-                          fontWeight: 600,
-                          fontSize: '0.85rem',
-                          textDecoration: 'underline',
-                          display: 'inline-block'
-                        }}
-                      >
-                        {isExpanded ? 'Ver menos' : 'Leer más'}
-                      </button>
-                    )}
-                  </p>
-                );
-              })()
-            )}
             <div className="lightbox-price">
               <span className="lightbox-price-label">Precio Inc. IGV</span>
               <span className="lightbox-price-value">S/ {productPrice.toFixed(2)}</span>

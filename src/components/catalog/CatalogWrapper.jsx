@@ -10,6 +10,7 @@ import Footer from '../layout/Footer';
 import ReclamacionesModal from '../ui/ReclamacionesModal';
 import ImageLightboxModal from '../ui/ImageLightboxModal';
 import MissionVisionSection from '../sections/MissionVisionSection';
+import { FEATURED_PRODUCTS_CONFIG } from '../../featuredConfig';
 
 import { PRODUCTS_PER_PAGE, WHATSAPP_NUMBER_DISPLAY, WHATSAPP_NUMBER, IMAGE_BASE_PATH } from '../../constants';
 
@@ -21,6 +22,39 @@ export default function CatalogWrapper({ initialProducts }) {
   const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
   const [products] = useState(initialProducts || []);
   const [activeLightboxProduct, setActiveLightboxProduct] = useState(null);
+
+  // Procesar dinámicamente los productos destacados basándonos en la configuración rápida
+  const featuredProducts = useMemo(() => {
+    return FEATURED_PRODUCTS_CONFIG.map(config => {
+      const product = products.find(p => p.id === config.id);
+      if (!product) return null;
+
+      const themeColor = config.themeColor || '#FFB800';
+
+      // Convertir color hexadecimal a rgb para los efectos glow y gradientes
+      const hexToRgb = (hex) => {
+        const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}` : '255, 184, 0';
+      };
+
+      const rgb = hexToRgb(themeColor);
+      const glowColor = `rgba(${rgb}, 0.2)`;
+      // El gradiente final del fondo mezcla el brillo del color primario de la marca con el fondo oscuro general
+      const bgGradient = `radial-gradient(circle at 80% 20%, rgba(${rgb}, 0.12) 0%, transparent 50%), linear-gradient(135deg, #0A0F18 0%, rgba(${rgb}, 0.04) 100%)`;
+
+      return {
+        ...product,
+        themeColor,
+        glowColor,
+        bgGradient,
+        specs: config.specs || [
+          "Producto Premium Garantizado",
+          "Alta Calidad de Fabricación",
+          "Soporte y Garantía Oficial"
+        ]
+      };
+    }).filter(Boolean);
+  }, [products]);
 
   const handleCotizarProduct = (product) => {
     const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${product.name}* (Marca: ${product.brand})\nPrecio Inc. IGV: S/ ${product.price.toFixed(2)}\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
@@ -75,8 +109,7 @@ export default function CatalogWrapper({ initialProducts }) {
       const productFields = [
         product.name,
         product.brand,
-        product.category,
-        product.description
+        product.category
       ].map(cleanText);
 
       const matchesSearch = queryTerms.every((term) => 
@@ -103,7 +136,9 @@ export default function CatalogWrapper({ initialProducts }) {
       />
 
       <HeroSection 
+        featuredProducts={featuredProducts}
         scrollSection={scrollSection} 
+        onCotizarProduct={handleCotizarProduct}
       />
 
       <main className="main-content">
@@ -167,7 +202,6 @@ export default function CatalogWrapper({ initialProducts }) {
           productName={activeLightboxProduct.name}
           productBrand={activeLightboxProduct.brand}
           productPrice={activeLightboxProduct.price}
-          productDescription={activeLightboxProduct.description}
           onCotizar={() => handleCotizarProduct(activeLightboxProduct)}
         />
       )}
