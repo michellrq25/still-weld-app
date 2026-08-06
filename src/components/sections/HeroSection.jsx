@@ -80,8 +80,8 @@ export default function HeroSection({ featuredProducts = [], scrollSection, onCo
             ? product.image
             : `${IMAGE_BASE_PATH}/${product.image}`;
 
-          // Usar etiqueta/tag dinámico según categoría si no tiene uno definido
-          const productTag = product.tag || (product.category === 'EPP' ? 'Seguridad y EPP' : 'Equipamiento Industrial');
+          // Usar etiqueta/tag dinámico
+          const productTag = product.tag || 'Equipamiento Industrial';
 
           return (
             <div
@@ -130,11 +130,6 @@ export default function HeroSection({ featuredProducts = [], scrollSection, onCo
                       className="hero-product-image"
                       loading="eager"
                     />
-                  </div>
-
-                  {/* Badge de categoría flotante sobre la imagen */}
-                  <div className="floating-category-badge" style={{ backgroundColor: product.themeColor }}>
-                    {product.category}
                   </div>
                 </div>
               </div>

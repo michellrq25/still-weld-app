@@ -28,7 +28,6 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "number", value_type: "int" }
               - { label: "Nombre", name: "name", widget: "string" }
-              - { label: "Categoría", name: "category", widget: "select", options: ["Soldadura", "Corte", "EPP", "Consumibles", "Herramientas"] }
               - { label: "Marca", name: "brand", widget: "string" }
               - { label: "Precio Inc. IGV", name: "price", widget: "number", value_type: "float" }
               - { label: "Icono Lucide", name: "icon", widget: "select", options: ["Flame", "Sparkles", "ShieldCheck", "Wrench"] }

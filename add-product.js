@@ -35,9 +35,6 @@ async function main() {
 
     const brand = await askQuestion("Marca (ej. ESAB, Indura, Victor): ");
     
-    console.log("\nCategorías válidas: Soldadura, Corte, EPP, Consumibles, Herramientas");
-    const category = await askQuestion("Categoría: ");
-    
     const priceInput = await askQuestion("Precio Inc. IGV (ej. 650 o 75.5): ");
     const price = parseFloat(priceInput) || 0;
     
@@ -80,7 +77,6 @@ async function main() {
     const newProduct = {
       id: nextId,
       name,
-      category: category || "Soldadura",
       brand: brand || "Generico",
       price,
       icon: icon || "Flame"

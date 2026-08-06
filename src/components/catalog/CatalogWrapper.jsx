@@ -15,8 +15,6 @@ import { FEATURED_PRODUCTS_CONFIG } from '../../featuredConfig';
 import { PRODUCTS_PER_PAGE, WHATSAPP_NUMBER_DISPLAY, WHATSAPP_NUMBER, IMAGE_BASE_PATH } from '../../constants';
 
 export default function CatalogWrapper({ initialProducts }) {
-  // Estados principales
-  const [activeCategory, setActiveCategory] = useState('Todos');
   const [searchQuery, setSearchQuery] = useState('');
   const [isReclamacionesOpen, setIsReclamacionesOpen] = useState(false);
   const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
@@ -62,27 +60,24 @@ export default function CatalogWrapper({ initialProducts }) {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`, '_blank');
   };
 
-  // Resetear la cantidad de productos visibles cuando cambia la categoría o búsqueda
+  // Resetear la cantidad de productos visibles cuando cambia la búsqueda
   useEffect(() => {
     setVisibleCount(PRODUCTS_PER_PAGE);
-  }, [activeCategory, searchQuery]);
+  }, [searchQuery]);
 
   // Manejar el cambio del término de búsqueda y desplazar automáticamente a productos
   const handleSearchChange = (query) => {
     const isFirstChar = searchQuery === '' && query !== '';
     setSearchQuery(query);
-    if (query.trim() !== '') {
-      setActiveCategory('Todos');
-      if (isFirstChar) {
-        scrollSection('productos');
-      }
+    if (query.trim() !== '' && isFirstChar) {
+      scrollSection('productos');
     }
   };
 
   // Filtrado de productos en tiempo real (con normalización y raíces flexibles para español)
   const filteredProducts = useMemo(() => {
     if (!searchQuery.trim()) {
-      return products.filter((product) => activeCategory === 'Todos' || product.category === activeCategory);
+      return products;
     }
 
     const cleanText = (text) => {
@@ -97,28 +92,22 @@ export default function CatalogWrapper({ initialProducts }) {
       .split(/\s+/)
       .filter(Boolean)
       .map((term) => {
-        // Quitar sufijos comunes en español de plurales y sustantivos instrumentales/agentes
-        // para extraer la raíz de búsqueda (ej. soldadoras/soldadores/soldadora/soldador -> sold)
+        // Quitar sufijos comunes en español de plurales
         return term.replace(/(adoras|adores|adora|ador|as|es|s)$/g, '');
       })
       .filter((term) => term.length > 0);
 
     return products.filter((product) => {
-      const matchesCategory = activeCategory === 'Todos' || product.category === activeCategory;
-      
       const productFields = [
         product.name,
-        product.brand,
-        product.category
+        product.brand
       ].map(cleanText);
 
-      const matchesSearch = queryTerms.every((term) => 
+      return queryTerms.every((term) => 
         productFields.some((field) => field.includes(term))
       );
-
-      return matchesCategory && matchesSearch;
     });
-  }, [products, activeCategory, searchQuery]);
+  }, [products, searchQuery]);
 
   const scrollSection = (id) => {
     const element = document.getElementById(id);
@@ -143,8 +132,6 @@ export default function CatalogWrapper({ initialProducts }) {
 
       <main className="main-content">
         <ProductsCatalog 
-          activeCategory={activeCategory}
-          setActiveCategory={setActiveCategory}
           loading={false}
           filteredProducts={filteredProducts}
           visibleCount={visibleCount}
@@ -163,7 +150,6 @@ export default function CatalogWrapper({ initialProducts }) {
 
       <Footer 
         whatsappNumberDisplay={WHATSAPP_NUMBER_DISPLAY}
-        setActiveCategory={setActiveCategory}
         scrollSection={scrollSection}
         setIsReclamacionesOpen={setIsReclamacionesOpen}
       />

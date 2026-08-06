@@ -25,7 +25,7 @@ export default function Header({ searchQuery, setSearchQuery, scrollSection }) {
           <Search className="search-icon" size={18} />
           <input
             type="text"
-            placeholder="Buscar soldadoras, EPP, marcas (ESAB, Indura...)"
+            placeholder="Buscar por nombre o marca"
             className="search-input"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}

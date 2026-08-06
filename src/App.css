@@ -459,20 +459,7 @@
   transform: scale(1.06) rotate(-2deg);
 }
 
-.floating-category-badge {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  z-index: 3;
-  color: var(--secondary);
-  font-size: 0.7rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 0.35rem 0.85rem;
-  border-radius: var(--radius-md);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
+
 
 /* Flechas del carrusel */
 .carousel-arrow {
@@ -643,48 +630,7 @@
   font-size: 1rem;
 }
 
-/* --- CATEGORIES & TABS --- */
-.category-tabs-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2.5rem;
-  overflow-x: auto;
-  padding-bottom: 0.5rem;
-}
 
-.category-tabs {
-  display: flex;
-  background-color: var(--border-color);
-  padding: 0.35rem;
-  border-radius: var(--radius-lg);
-  gap: 0.25rem;
-}
-
-.tab-btn {
-  background: none;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: var(--radius-md);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: var(--transition);
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tab-btn:hover {
-  color: var(--secondary);
-}
-
-.tab-btn.active {
-  background-color: var(--brand-blue);
-  color: var(--text-white);
-  box-shadow: 0 4px 10px rgba(0, 149, 218, 0.2);
-}
 
 /* --- PRODUCT CATALOG GRID --- */
 .products-grid {
@@ -779,14 +725,7 @@
   flex-grow: 1;
 }
 
-.product-category {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.5px;
-}
+
 
 .product-name {
   font-family: var(--font-display);
@@ -815,18 +754,21 @@
 .product-price {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .price-label {
   font-size: 0.75rem;
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .price-value {
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--secondary);
+  white-space: nowrap;
 }
 
 .cotizar-btn {
@@ -834,14 +776,16 @@
   /* WhatsApp Green */
   color: var(--text-white);
   border: none;
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-sans);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -1818,12 +1762,7 @@
     padding: 0.5rem;
   }
 
-  .floating-category-badge {
-    bottom: 0.75rem;
-    right: 0.75rem;
-    font-size: 0.65rem;
-    padding: 0.3rem 0.75rem;
-  }
+
 
   .carousel-arrow {
     display: none;

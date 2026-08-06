@@ -12,8 +12,7 @@ export const WHATSAPP_NUMBER = '51999202852';
 // Ruta base pública donde se almacenan las fotos reales de los productos
 export const IMAGE_BASE_PATH = '/images/products';
 
-// Categorías del catálogo de la tienda
-export const CATEGORIES = ['Todos', 'Soldadura', 'Corte', 'EPP', 'Consumibles', 'Herramientas'];
+
 
 // Umbral de stock para mostrar alerta de pocas unidades
 export const STOCK_ALERT_THRESHOLD = 3;

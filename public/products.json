@@ -7,8 +7,7 @@
       "stock": 0,
       "icon": "Flame",
       "id": 1,
-      "image": "/images/products/tafilete-jackson-safety-20696.jpeg",
-      "category": "EPP"
+      "image": "/images/products/tafilete-jackson-safety-20696.jpeg"
     },
     {
       "brand": "Flange Wizard",
@@ -17,8 +16,7 @@
       "stock": 5,
       "icon": "Flame",
       "id": 2,
-      "image": "/images/products/faja-de-trazo-de-2-16-pulg-wizard-wrap.jpeg",
-      "category": "Herramientas"
+      "image": "/images/products/faja-de-trazo-de-2-16-pulg-wizard-wrap.jpeg"
     },
     {
       "brand": "Flange Wizard",
@@ -27,8 +25,7 @@
       "stock": 3,
       "icon": "Sparkles",
       "id": 3,
-      "image": "/images/products/faja-de-trazo-6-30-pulg-wizard-wrap.jpeg",
-      "category": "Herramientas"
+      "image": "/images/products/faja-de-trazo-6-30-pulg-wizard-wrap.jpeg"
     },
     {
       "brand": "Flange Wizard",
@@ -37,8 +34,7 @@
       "stock": 12,
       "icon": "ShieldCheck",
       "id": 4,
-      "image": "/images/products/faja-de-trazo-de-12-48-wizard-wrap.jpeg",
-      "category": "Herramientas"
+      "image": "/images/products/faja-de-trazo-de-12-48-wizard-wrap.jpeg"
     },
     {
       "brand": "Tillman",
@@ -47,8 +43,7 @@
       "stock": 25,
       "icon": "ShieldCheck",
       "id": 5,
-      "image": "/images/products/guantes-de-soldar-mig-tig-tilman-1945l.jpeg",
-      "category": "EPP"
+      "image": "/images/products/guantes-de-soldar-mig-tig-tilman-1945l.jpeg"
     },
     {
       "brand": "Trust",
@@ -57,8 +52,7 @@
       "stock": 40,
       "icon": "Flame",
       "id": 6,
-      "image": "/images/products/guantes-de-soldar-mig-smaw-trust-1015l.jpeg",
-      "category": "EPP"
+      "image": "/images/products/guantes-de-soldar-mig-smaw-trust-1015l.jpeg"
     },
     {
       "brand": "TEFUAWE",
@@ -67,8 +61,7 @@
       "stock": 4,
       "icon": "Sparkles",
       "id": 7,
-      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-black-flp-2x4.jpeg",
-      "category": "EPP"
+      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-black-flp-2x4.jpeg"
     },
     {
       "brand": "TEFUAWE",
@@ -77,8 +70,7 @@
       "stock": 15,
       "icon": "Wrench",
       "id": 8,
-      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-green-flp-2x4.jpeg",
-      "category": "EPP"
+      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-green-flp-2x4.jpeg"
     },
     {
       "brand": "TEFUAWE",
@@ -87,8 +79,7 @@
       "stock": 2,
       "icon": "Flame",
       "id": 9,
-      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-silver-flp-2x4.jpeg",
-      "category": "EPP"
+      "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-silver-flp-2x4.jpeg"
     },
     {
       "brand": "Sellstrom",
@@ -97,8 +88,7 @@
       "stock": 4,
       "icon": "Flame",
       "id": 10,
-      "image": "/images/products/visor-abatible-sellstrom-s27300.jpeg",
-      "category": "EPP"
+      "image": "/images/products/visor-abatible-sellstrom-s27300.jpeg"
     },
     {
       "brand": "USA PRO TOOLS",
@@ -107,8 +97,7 @@
       "stock": 30,
       "icon": "ShieldCheck",
       "id": 11,
-      "image": "/images/products/rodillera-ultraflex-antideslizante-gris-usa-pro-tools.jpeg",
-      "category": "EPP"
+      "image": "/images/products/rodillera-ultraflex-antideslizante-gris-usa-pro-tools.jpeg"
     },
     {
       "brand": "PROFAX",
@@ -117,8 +106,7 @@
       "stock": 50,
       "icon": "ShieldCheck",
       "id": 12,
-      "image": "/images/products/antorcha-mig-fcaw-profax-m400-116-15.jpeg",
-      "category": "Soldadura"
+      "image": "/images/products/antorcha-mig-fcaw-profax-m400-116-15.jpeg"
     },
     {
       "brand": "STILL WELD",
@@ -127,8 +115,7 @@
       "stock": 20,
       "icon": "Flame",
       "id": 13,
-      "image": "/images/products/fotosencible-bluefilter-mtl-2418-shade-11.jpeg",
-      "category": "EPP"
+      "image": "/images/products/fotosencible-bluefilter-mtl-2418-shade-11.jpeg"
     }
   ]
 }

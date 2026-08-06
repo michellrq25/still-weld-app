@@ -1,11 +1,7 @@
 import { Phone, Mail, MapPin, FileText } from 'lucide-react'
 
-import { CATEGORIES } from '../../constants'
-const CATEGORIES_FOOTER = CATEGORIES.slice(1);
-
 export default function Footer({
   whatsappNumberDisplay,
-  setActiveCategory,
   scrollSection,
   setIsReclamacionesOpen
 }) {
@@ -19,19 +15,6 @@ export default function Footer({
           <p>
             Importadores y distribuidores autorizados de equipos y suministros de soldadura, corte y EPP industrial. Comprometidos con la excelencia operativa y seguridad de nuestros clientes.
           </p>
-        </div>
-
-        <div className="footer-col">
-          <h3>Categorías</h3>
-          <ul className="footer-links">
-            {CATEGORIES_FOOTER.map((cat) => (
-              <li key={cat}>
-                <a href="#productos" onClick={(e) => { e.preventDefault(); setActiveCategory(cat); scrollSection('productos'); }}>
-                  {cat}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div className="footer-col">
