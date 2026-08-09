@@ -124,6 +124,70 @@
       "icon": "Flame",
       "image": "/images/products/flujometro-para-co2-profax-–-pfxrf1430-320.jpeg",
       "id": 14
+    },
+    {
+      "id": 15,
+      "name": "PFX64A45J CUELLO DE GANSO M400, 45°",
+      "brand": "PROFAX",
+      "price": 100,
+      "image": "/images/products/pfx64a45j-cuello-de-ganso-m400-45°-profax.jpeg",
+      "icon": "Sparkles"
+    },
+    {
+      "id": 16,
+      "name": "SC-5 LIMA ROTATIVA CILINDRICA CON RADIO 1-4''-1-2''",
+      "brand": "Still Weld",
+      "price": 100,
+      "image": "/images/products/sc-5-lima-rotativa-cilindrica-con-radio-1-4-1-2-.jpeg",
+      "icon": "Sparkles"
+    },
+    {
+      "id": 17,
+      "name": "45V64 GAS LENS ESTANDAR JUMBO 3-32''",
+      "brand": "-",
+      "image": "/images/products/45v64-gas-lens-estandar-jumbo-3-32-.jpeg",
+      "price": 10,
+      "icon": "Flame"
+    },
+    {
+      "id": 18,
+      "name": "53N87 CERAMICA PARA GAS LENS JUMBO N°12",
+      "brand": "-",
+      "image": "/images/products/53n87-ceramica-para-gas-lens-jumbo-n°12.jpeg",
+      "price": 50,
+      "icon": "Sparkles"
+    },
+    {
+      "id": 19,
+      "name": "57Y02 TAPON LARGO PARA ANTORCHA TIG",
+      "brand": "-",
+      "image": "/images/products/57y02-tapon-largo-para-antorcha-tig.jpeg",
+      "price": 50,
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": 20,
+      "name": "10N32 BODY COLLET ESTANDAR",
+      "brand": "-",
+      "image": "/images/products/10n32-body-collet-estandar.jpeg",
+      "price": 10,
+      "icon": "Sparkles"
+    },
+    {
+      "id": 21,
+      "name": "10N24 COLLET ESTANDAR",
+      "brand": "-",
+      "image": "/images/products/10n24-collet-estandar.jpeg",
+      "price": 10,
+      "icon": "Flame"
+    },
+    {
+      "id": 22,
+      "name": "54N01 AISLADOR PARA GAS LENS ESTANDAR",
+      "brand": "-",
+      "image": "/images/products/54n01-aislador-para-gas-lens-estandar.jpeg",
+      "price": 10,
+      "icon": "Flame"
     }
   ]
 }
