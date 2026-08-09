@@ -11,7 +11,7 @@ export default function ProductsCatalog({
   onImageClick
 }) {
   return (
-    <section id="productos" style={{ scrollMarginTop: '100px' }}>
+    <section id="productos">
       <div className="section-header">
         <h2 className="section-title">Nuestro Catálogo</h2>
         <p className="section-desc">

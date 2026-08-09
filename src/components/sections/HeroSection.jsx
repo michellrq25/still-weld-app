@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
-import { ChevronRight, ChevronLeft, ShieldCheck, Flame, Wrench, ArrowRight } from 'lucide-react';
-import { IMAGE_BASE_PATH } from '../../constants';
-
-// Array de iconos predeterminados para las características técnicas
-const SPEC_ICONS = [ShieldCheck, Flame, Wrench];
+import { ChevronRight, ChevronLeft, ArrowRight } from 'lucide-react';
+import { IMAGE_BASE_PATH, WHATSAPP_NUMBER } from '../../constants';
 
 export default function HeroSection({ featuredProducts = [], scrollSection, onCotizarProduct }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -35,7 +32,7 @@ export default function HeroSection({ featuredProducts = [], scrollSection, onCo
     } else {
       const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${product.name}* (Marca: ${product.brand})\nPrecio Inc. IGV: S/ ${product.price.toFixed(2)}\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
       const encodedText = encodeURIComponent(message);
-      window.open(`https://wa.me/51999202852?text=${encodedText}`, '_blank');
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`, '_blank');
     }
   };
 

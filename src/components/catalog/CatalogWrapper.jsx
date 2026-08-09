@@ -103,35 +103,39 @@ export default function CatalogWrapper({ initialProducts }) {
         product.brand
       ].map(cleanText);
 
-      return queryTerms.every((term) => 
+      return queryTerms.every((term) =>
         productFields.some((field) => field.includes(term))
       );
     });
   }, [products, searchQuery]);
 
   const scrollSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (id === 'hero') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
   return (
     <div className="app-wrapper">
-      <Header 
-        searchQuery={searchQuery} 
-        setSearchQuery={handleSearchChange} 
-        scrollSection={scrollSection} 
+      <Header
+        searchQuery={searchQuery}
+        setSearchQuery={handleSearchChange}
+        scrollSection={scrollSection}
       />
 
-      <HeroSection 
+      <HeroSection
         featuredProducts={featuredProducts}
-        scrollSection={scrollSection} 
+        scrollSection={scrollSection}
         onCotizarProduct={handleCotizarProduct}
       />
 
       <main className="main-content">
-        <ProductsCatalog 
+        <ProductsCatalog
           loading={false}
           filteredProducts={filteredProducts}
           visibleCount={visibleCount}
@@ -143,20 +147,20 @@ export default function CatalogWrapper({ initialProducts }) {
 
         <MissionVisionSection />
 
-        <ContactSection 
-          whatsappNumberDisplay={WHATSAPP_NUMBER_DISPLAY} 
+        <ContactSection
+          whatsappNumberDisplay={WHATSAPP_NUMBER_DISPLAY}
         />
       </main>
 
-      <Footer 
+      <Footer
         whatsappNumberDisplay={WHATSAPP_NUMBER_DISPLAY}
         scrollSection={scrollSection}
         setIsReclamacionesOpen={setIsReclamacionesOpen}
       />
 
-      <ReclamacionesModal 
-        isOpen={isReclamacionesOpen} 
-        setIsOpen={setIsReclamacionesOpen} 
+      <ReclamacionesModal
+        isOpen={isReclamacionesOpen}
+        setIsOpen={setIsReclamacionesOpen}
       />
 
       {/* WHATSAPP FLOATING BUTTON */}
@@ -181,8 +185,8 @@ export default function CatalogWrapper({ initialProducts }) {
           isOpen={!!activeLightboxProduct}
           onClose={() => setActiveLightboxProduct(null)}
           imageSrc={
-            activeLightboxProduct.image.startsWith('/') 
-              ? activeLightboxProduct.image 
+            activeLightboxProduct.image.startsWith('/')
+              ? activeLightboxProduct.image
               : `${IMAGE_BASE_PATH}/${activeLightboxProduct.image}`
           }
           productName={activeLightboxProduct.name}

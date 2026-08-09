@@ -9,7 +9,7 @@ export async function GET(request) {
 
   if (!client_id || !client_secret) {
     return NextResponse.json(
-      { error: 'Faltan las credenciales OAuth en las variables de entorno (OAUTH_CLIENT_ID/OAUTH_CLIENT_SECRET o GITHUB_CLIENT_ID/GITHUB_CLIENT_SECRET)' },
+      { error: 'Error de configuración en el servidor de autenticación.' },
       { status: 500 }
     );
   }

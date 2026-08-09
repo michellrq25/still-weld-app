@@ -7,7 +7,7 @@ export async function GET(request) {
   const client_id = process.env.OAUTH_CLIENT_ID || process.env.GITHUB_CLIENT_ID;
   if (!client_id) {
     return NextResponse.json(
-      { error: 'Falta la variable de entorno de Client ID (OAUTH_CLIENT_ID o GITHUB_CLIENT_ID)' },
+      { error: 'Error de configuración en el servidor de autenticación.' },
       { status: 500 }
     );
   }

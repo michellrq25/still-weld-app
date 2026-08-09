@@ -1,4 +1,4 @@
-import { Flame, Sparkles, ShieldCheck, Wrench } from 'lucide-react'
+import { Flame } from 'lucide-react'
 
 import { IMAGE_BASE_PATH } from '../../constants'
 

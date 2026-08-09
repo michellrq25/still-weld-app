@@ -1,12 +1,36 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react'
+import { CONTACT_METHOD, CONTACT_EMAIL, WHATSAPP_NUMBER } from '../../constants'
 
 export default function ContactSection({ whatsappNumberDisplay }) {
   const [contactForm, setContactForm] = useState({ nombre: '', email: '', telefono: '', mensaje: '' })
   const [contactSubmitted, setContactSubmitted] = useState(false)
 
+  const isEmailMode = CONTACT_METHOD === 'email';
+
   const handleContactSubmit = (e) => {
     e.preventDefault();
+
+    if (isEmailMode) {
+      const subject = encodeURIComponent(`Consulta de Atención Personalizada - ${contactForm.nombre}`);
+      const body = encodeURIComponent(
+        `STILL WELD - Atención Personalizada\n\n` +
+        `• Nombre: ${contactForm.nombre}\n` +
+        `• Email: ${contactForm.email}\n` +
+        `• Teléfono: ${contactForm.telefono || 'No especificado'}\n\n` +
+        `Mensaje:\n${contactForm.mensaje}`
+      );
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    } else {
+      const message = `*STILL WELD - Atención Personalizada*\n\n` +
+        `• *Nombre:* ${contactForm.nombre}\n` +
+        `• *Email:* ${contactForm.email}\n` +
+        `• *Teléfono:* ${contactForm.telefono || 'No especificado'}\n\n` +
+        `*Mensaje:*\n${contactForm.mensaje}`;
+      const encodedText = encodeURIComponent(message);
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`, '_blank');
+    }
+
     setContactSubmitted(true);
     setTimeout(() => {
       setContactForm({ nombre: '', email: '', telefono: '', mensaje: '' });
@@ -15,7 +39,7 @@ export default function ContactSection({ whatsappNumberDisplay }) {
   }
 
   return (
-    <section id="contacto" className="contact-section" style={{ scrollMarginTop: '100px' }}>
+    <section id="contacto" className="contact-section">
       <div className="contact-grid">
         <div className="contact-info-panel">
           <h2 className="contact-info-title">Atención Personalizada</h2>
@@ -40,7 +64,7 @@ export default function ContactSection({ whatsappNumberDisplay }) {
               </div>
               <div className="contact-detail-text">
                 <h4>Correo Electrónico</h4>
-                <p>ventas@stillweld.com</p>
+                <p>{CONTACT_EMAIL}</p>
               </div>
             </div>
 
@@ -107,13 +131,17 @@ export default function ContactSection({ whatsappNumberDisplay }) {
             </div>
 
             <button type="submit" className="btn btn-primary form-submit-btn">
-              Enviar Mensaje <Send size={16} />
+              {isEmailMode ? 'Enviar por Correo' : 'Enviar por WhatsApp'} {isEmailMode ? <Mail size={16} /> : <Send size={16} />}
             </button>
 
             {contactSubmitted && (
               <div className="form-success-alert">
                 <CheckCircle2 size={20} />
-                <span>¡Gracias! Tu mensaje ha sido enviado correctamente. Un asesor se comunicará contigo pronto.</span>
+                <span>
+                  {isEmailMode 
+                    ? '¡Gracias! Se abrirá tu aplicación de correo para enviar la consulta.' 
+                    : '¡Gracias! Tu mensaje ha sido enviado por WhatsApp. Un asesor se comunicará contigo pronto.'}
+                </span>
               </div>
             )}
           </form>
