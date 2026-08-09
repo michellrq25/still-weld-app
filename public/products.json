@@ -116,6 +116,14 @@
       "icon": "Flame",
       "id": 13,
       "image": "/images/products/fotosencible-bluefilter-mtl-2418-shade-11.jpeg"
+    },
+    {
+      "name": "Flujometro para CO2 Profax – PFXRF1430-320",
+      "brand": "Profax",
+      "price": 1000,
+      "icon": "Flame",
+      "image": "/images/products/flujometro-para-co2-profax-–-pfxrf1430-320.jpeg",
+      "id": 14
     }
   ]
 }
