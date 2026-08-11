@@ -25,7 +25,7 @@ export default function Header({ searchQuery, setSearchQuery, scrollSection }) {
           <Search className="search-icon" size={18} />
           <input
             type="text"
-            placeholder="Buscar por nombre o marca"
+            placeholder="Buscar por nombre de producto"
             className="search-input"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}

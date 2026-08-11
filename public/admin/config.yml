@@ -24,11 +24,8 @@ collections:
           - label: "Productos"
             name: "products"
             widget: "list"
-            summary: "{{fields.name}} ({{fields.brand}}) - S/ {{fields.price}}"
+            summary: "{{fields.name}}"
             fields:
               - { label: "ID", name: "id", widget: "number", value_type: "int" }
               - { label: "Nombre", name: "name", widget: "string" }
-              - { label: "Marca", name: "brand", widget: "string" }
-              - { label: "Precio Inc. IGV", name: "price", widget: "number", value_type: "float" }
-              - { label: "Icono Lucide", name: "icon", widget: "select", options: ["Flame", "Sparkles", "ShieldCheck", "Wrench"] }
               - { label: "Imagen", name: "image", widget: "image", required: false }

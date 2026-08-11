@@ -281,6 +281,7 @@
   line-height: 1.15;
   margin-bottom: 1rem;
   letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
 .hero-slide-wrapper.active .hero-title {
@@ -755,35 +756,17 @@
   -webkit-box-orient: vertical;
   line-clamp: 2;
   overflow: hidden;
+  text-transform: uppercase;
 }
 
 .product-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid #f1f5f9;
-}
-
-.product-price {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-
-.price-label {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  white-space: nowrap;
-}
-
-.price-value {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--secondary);
-  white-space: nowrap;
+  width: 100%;
 }
 
 .cotizar-btn {
@@ -791,16 +774,16 @@
   /* WhatsApp Green */
   color: var(--text-white);
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.65rem 1rem;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-sans);
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   white-space: nowrap;
-  flex-shrink: 0;
+  width: 100%;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -1933,10 +1916,10 @@
 
 .lightbox-close-btn {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
+  top: 1rem;
+  right: 1rem;
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
   width: 44px;
   height: 44px;
@@ -1945,12 +1928,14 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
   z-index: 3010;
 }
 
 .lightbox-close-btn:hover {
   background-color: var(--primary);
+  color: #0f172a;
   transform: scale(1.1);
 }
 
@@ -2028,6 +2013,7 @@
   font-weight: 700;
   color: var(--text-white, #ffffff);
   margin: 0;
+  text-transform: uppercase;
 }
 
 .lightbox-price {

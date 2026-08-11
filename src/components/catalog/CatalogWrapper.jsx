@@ -55,7 +55,7 @@ export default function CatalogWrapper({ initialProducts }) {
   }, [products]);
 
   const handleCotizarProduct = (product) => {
-    const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${product.name}* (Marca: ${product.brand})\nPrecio Inc. IGV: S/ ${product.price.toFixed(2)}\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
+    const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${(product.name || '').toUpperCase()}*\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
     const encodedText = encodeURIComponent(message);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`, '_blank');
   };
@@ -185,13 +185,13 @@ export default function CatalogWrapper({ initialProducts }) {
           isOpen={!!activeLightboxProduct}
           onClose={() => setActiveLightboxProduct(null)}
           imageSrc={
-            activeLightboxProduct.image.startsWith('/')
-              ? activeLightboxProduct.image
-              : `${IMAGE_BASE_PATH}/${activeLightboxProduct.image}`
+            (activeLightboxProduct.image && typeof activeLightboxProduct.image === 'string')
+              ? (activeLightboxProduct.image.startsWith('/')
+                  ? activeLightboxProduct.image
+                  : `${IMAGE_BASE_PATH}/${activeLightboxProduct.image}`)
+              : ''
           }
           productName={activeLightboxProduct.name}
-          productBrand={activeLightboxProduct.brand}
-          productPrice={activeLightboxProduct.price}
           onCotizar={() => handleCotizarProduct(activeLightboxProduct)}
         />
       )}

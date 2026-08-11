@@ -1,120 +1,68 @@
 {
   "products": [
     {
-      "brand": "Jackson",
-      "price": 1850,
-      "name": "TAFILETE JACKSON SAFETY 20696",
-      "stock": 0,
-      "icon": "Flame",
       "id": 1,
+      "name": "TAFILETE JACKSON SAFETY 20696",
       "image": "/images/products/tafilete-jackson-safety-20696.jpeg"
     },
     {
-      "brand": "Flange Wizard",
-      "price": 1420,
-      "name": "FAJA DE TRAZO DE 2-16 PULG WIZARD WRAP",
-      "stock": 5,
-      "icon": "Flame",
       "id": 2,
+      "name": "FAJA DE TRAZO DE 2-16 PULG WIZARD WRAP",
       "image": "/images/products/faja-de-trazo-de-2-16-pulg-wizard-wrap.jpeg"
     },
     {
-      "brand": "Flange Wizard",
-      "price": 4200,
-      "name": "FAJA DE TRAZO 6-30 PULG WIZARD WRAP",
-      "stock": 3,
-      "icon": "Sparkles",
       "id": 3,
+      "name": "FAJA DE TRAZO 6-30 PULG WIZARD WRAP",
       "image": "/images/products/faja-de-trazo-6-30-pulg-wizard-wrap.jpeg"
     },
     {
-      "brand": "Flange Wizard",
-      "price": 580,
-      "name": "FAJA DE TRAZO DE 12-48\" WIZARD WRAP",
-      "stock": 12,
-      "icon": "ShieldCheck",
       "id": 4,
+      "name": "FAJA DE TRAZO DE 12-48\" WIZARD WRAP",
       "image": "/images/products/faja-de-trazo-de-12-48-wizard-wrap.jpeg"
     },
     {
-      "brand": "Tillman",
-      "price": 45,
-      "name": "GUANTES DE SOLDAR MIG TIG TILMAN 1945L",
-      "stock": 25,
-      "icon": "ShieldCheck",
       "id": 5,
+      "name": "GUANTES DE SOLDAR MIG TIG TILMAN 1945L",
       "image": "/images/products/guantes-de-soldar-mig-tig-tilman-1945l.jpeg"
     },
     {
-      "brand": "Trust",
-      "price": 135,
-      "name": "GUANTES DE SOLDAR MIG SMAW TRUST 1015L",
-      "stock": 40,
-      "icon": "Flame",
       "id": 6,
+      "name": "GUANTES DE SOLDAR MIG SMAW TRUST 1015L",
       "image": "/images/products/guantes-de-soldar-mig-smaw-trust-1015l.jpeg"
     },
     {
-      "brand": "TEFUAWE",
-      "price": 1150,
-      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE BLACK FLP 2X4",
-      "stock": 4,
-      "icon": "Sparkles",
       "id": 7,
+      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE BLACK FLP 2X4",
       "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-black-flp-2x4.jpeg"
     },
     {
-      "brand": "TEFUAWE",
-      "price": 320,
-      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE GREEN FLP 2X4",
-      "stock": 15,
-      "icon": "Wrench",
       "id": 8,
+      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE GREEN FLP 2X4",
       "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-green-flp-2x4.jpeg"
     },
     {
-      "brand": "TEFUAWE",
-      "price": 6800,
-      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE SILVER FLP 2X4",
-      "stock": 2,
-      "icon": "Flame",
       "id": 9,
+      "name": "MASCARA DE SOLDAR PIPELINER TEFUAWE SILVER FLP 2X4",
       "image": "/images/products/mascara-de-soldar-pipeliner-tefuawe-silver-flp-2x4.jpeg"
     },
     {
-      "brand": "Sellstrom",
-      "price": 2450,
-      "name": "VISOR ABATIBLE SELLSTROM S27300",
-      "stock": 4,
-      "icon": "Flame",
       "id": 10,
+      "name": "VISOR ABATIBLE SELLSTROM S27300",
       "image": "/images/products/visor-abatible-sellstrom-s27300.jpeg"
     },
     {
-      "brand": "USA PRO TOOLS",
-      "price": 85,
-      "name": "RODILLERA ULTRAFLEX  ANTIDESLIZANTE GRIS USA PRO TOOLS",
-      "stock": 30,
-      "icon": "ShieldCheck",
       "id": 11,
+      "name": "RODILLERA ULTRAFLEX  ANTIDESLIZANTE GRIS USA PRO TOOLS",
       "image": "/images/products/rodillera-ultraflex-antideslizante-gris-usa-pro-tools.jpeg"
     },
     {
-      "brand": "PROFAX",
-      "price": 35,
-      "name": "ANTORCHA MIG/FCAW PROFAX M400-116-15",
-      "stock": 50,
-      "icon": "ShieldCheck",
       "id": 12,
+      "name": "ANTORCHA MIG/FCAW PROFAX M400-116-15",
       "image": "/images/products/antorcha-mig-fcaw-profax-m400-116-15.jpeg"
     },
     {
-      "brand": "STILL WELD",
-      "price": 280,
-      "name": "FOTOSENCIBLE BLUEFILTER MTL- 2418 SHADE 11",
-      "stock": 20,
-      "icon": "Flame",
       "id": 13,
+      "name": "FOTOSENCIBLE BLUEFILTER MTL- 2418 SHADE 11",
       "image": "/images/products/fotosencible-bluefilter-mtl-2418-shade-11.jpeg"
     }
   ]

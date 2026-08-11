@@ -72,12 +72,7 @@ export default function ImageLightboxModal({
         {/* Panel inferior de información del producto */}
         <div className="lightbox-info-panel">
           <div className="lightbox-info-text">
-            <span className="lightbox-brand">{productBrand}</span>
             <h2 className="lightbox-name">{productName}</h2>
-            <div className="lightbox-price">
-              <span className="lightbox-price-label">Precio Inc. IGV</span>
-              <span className="lightbox-price-value">S/ {productPrice.toFixed(2)}</span>
-            </div>
           </div>
 
           <button

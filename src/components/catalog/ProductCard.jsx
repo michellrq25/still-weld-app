@@ -4,21 +4,18 @@ import { IMAGE_BASE_PATH } from '../../constants'
 
 export default function ProductCard({ product, whatsappNumber, onImageClick }) {
   const handleCotizar = () => {
-    const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${product.name}* (Marca: ${product.brand})\nPrecio Inc. IGV: S/ ${product.price.toFixed(2)}\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
+    const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${(product.name || '').toUpperCase()}*\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
     const encodedText = encodeURIComponent(message);
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedText}`, '_blank');
   }
 
   return (
     <article className="product-card">
-      <span className="product-badge-brand">{product.brand}</span>
-
-
       <div
         className={`product-image-container ${product.image ? 'clickable' : ''}`}
         onClick={product.image ? () => onImageClick(product) : undefined}
       >
-        {product.image ? (
+        {product.image && typeof product.image === 'string' ? (
           <img
             src={product.image.startsWith('/') ? product.image : `${IMAGE_BASE_PATH}/${product.image}`}
             alt={product.name}
@@ -28,7 +25,7 @@ export default function ProductCard({ product, whatsappNumber, onImageClick }) {
           <div className="product-image-placeholder">
             <Flame size={48} strokeWidth={1.5} />
             <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-              FOTO REFERENCIAL {product.brand}
+              FOTO REFERENCIAL
             </span>
           </div>
         )}
@@ -37,10 +34,6 @@ export default function ProductCard({ product, whatsappNumber, onImageClick }) {
       <div className="product-info">
         <h3 className="product-name">{product.name}</h3>
         <div className="product-footer">
-          <div className="product-price">
-            <span className="price-label">Precio Inc. IGV</span>
-            <span className="price-value">S/ {product.price.toFixed(2)}</span>
-          </div>
           <button
             className="cotizar-btn"
             onClick={handleCotizar}

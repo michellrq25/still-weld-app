@@ -8,8 +8,7 @@
     "dev:next": "next dev",
     "build": "node prepare-admin.cjs && next build",
     "start": "next start",
-    "lint": "next lint",
-    "add-product": "node add-product.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",

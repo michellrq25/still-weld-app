@@ -30,7 +30,7 @@ export default function HeroSection({ featuredProducts = [], scrollSection, onCo
     if (onCotizarProduct) {
       onCotizarProduct(product);
     } else {
-      const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${product.name}* (Marca: ${product.brand})\nPrecio Inc. IGV: S/ ${product.price.toFixed(2)}\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
+      const message = `*STILL WELD*\nHola, deseo cotizar el siguiente producto:\n\n• *${(product.name || '').toUpperCase()}*\n\nPor favor, confírmenme la disponibilidad de stock y detalles de entrega.`;
       const encodedText = encodeURIComponent(message);
       window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`, '_blank');
     }
@@ -73,12 +73,9 @@ export default function HeroSection({ featuredProducts = [], scrollSection, onCo
           const isActive = index === currentSlide;
 
           // Formatear la ruta de la imagen
-          const imageUrl = product.image.startsWith('/')
-            ? product.image
-            : `${IMAGE_BASE_PATH}/${product.image}`;
-
-          // Usar etiqueta/tag dinámico
-          const productTag = product.tag || 'Equipamiento Industrial';
+          const imageUrl = (product.image && typeof product.image === 'string')
+            ? (product.image.startsWith('/') ? product.image : `${IMAGE_BASE_PATH}/${product.image}`)
+            : '';
 
           return (
             <div
@@ -87,21 +84,9 @@ export default function HeroSection({ featuredProducts = [], scrollSection, onCo
             >
               {/* Contenido de texto a la izquierda */}
               <div className="hero-text-content">
-                <div className="hero-badge-row">
-                  <span className="hero-tag-badge">{productTag}</span>
-                  <span className="hero-brand-badge">{product.brand}</span>
-                </div>
-
                 <h1 className="hero-title">
                   {product.name}
                 </h1>
-
-                <div className="hero-price-row">
-                  <span className="price-label">Precio Inc. IGV:</span>
-                  <span className="price-value" style={{ color: product.themeColor }}>
-                    S/ {product.price.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                  </span>
-                </div>
 
                 <div className="hero-buttons">
                   <button className="btn btn-primary" onClick={() => handleCotizar(product)}>
