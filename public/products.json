@@ -64,6 +64,174 @@
       "id": 13,
       "name": "FOTOSENCIBLE BLUEFILTER MTL- 2418 SHADE 11",
       "image": "/images/products/fotosencible-bluefilter-mtl-2418-shade-11.jpeg"
+    },
+    {
+      "name": "Flujometro para CO2 Profax – PFXRF1430-320",
+      "brand": "Profax",
+      "price": 1000,
+      "icon": "Flame",
+      "image": "/images/products/flujometro-para-co2-profax-–-pfxrf1430-320.jpeg",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "name": "PFX64A45J CUELLO DE GANSO M400, 45°",
+      "brand": "PROFAX",
+      "price": 100,
+      "image": "/images/products/pfx64a45j-cuello-de-ganso-m400-45°-profax.jpeg",
+      "icon": "Sparkles"
+    },
+    {
+      "id": 16,
+      "name": "SC-5 LIMA ROTATIVA CILINDRICA CON RADIO 1-4''-1-2''",
+      "brand": "Still Weld",
+      "price": 100,
+      "image": "/images/products/sc-5-lima-rotativa-cilindrica-con-radio-1-4-1-2-.jpeg",
+      "icon": "Sparkles"
+    },
+    {
+      "id": 17,
+      "name": "45V64 GAS LENS ESTANDAR JUMBO 3-32''",
+      "brand": "-",
+      "image": "/images/products/45v64-gas-lens-estandar-jumbo-3-32-.jpeg",
+      "price": 10,
+      "icon": "Flame"
+    },
+    {
+      "id": 18,
+      "name": "53N87 CERAMICA PARA GAS LENS JUMBO N°12",
+      "brand": "-",
+      "image": "/images/products/53n87-ceramica-para-gas-lens-jumbo-n°12.jpeg",
+      "price": 50,
+      "icon": "Sparkles"
+    },
+    {
+      "id": 19,
+      "name": "57Y02 TAPON LARGO PARA ANTORCHA TIG",
+      "brand": "-",
+      "image": "/images/products/57y02-tapon-largo-para-antorcha-tig.jpeg",
+      "price": 50,
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": 20,
+      "name": "10N32 BODY COLLET ESTANDAR",
+      "brand": "-",
+      "image": "/images/products/10n32-body-collet-estandar.jpeg",
+      "price": 10,
+      "icon": "Sparkles"
+    },
+    {
+      "id": 21,
+      "name": "10N24 COLLET ESTANDAR",
+      "brand": "-",
+      "image": "/images/products/10n24-collet-estandar.jpeg",
+      "price": 10,
+      "icon": "Flame"
+    },
+    {
+      "id": 22,
+      "name": "54N01 AISLADOR PARA GAS LENS ESTANDAR",
+      "brand": "-",
+      "image": "/images/products/54n01-aislador-para-gas-lens-estandar.jpeg",
+      "price": 10,
+      "icon": "Flame"
+    },
+    {
+      "id": 23,
+      "name": "TIZAS DE CALDERERO ENZO ITALY CAJA X 144PCS 125X5MM",
+      "brand": "ENZO",
+      "price": 50,
+      "icon": "Flame",
+      "image": "/images/products/tizas-de-calderero-enzo-italy-caja-x-144pcs-125x5mm.jpeg"
+    },
+    {
+      "id": 24,
+      "name": "CABLE CONTROL PROFAX PARA MAQUINA MILLER MSAK-354",
+      "brand": "PROFAX",
+      "price": 50,
+      "icon": "Flame",
+      "image": "/images/products/cable-control-profax-para-maquina-miller-msak-354.jpeg"
+    },
+    {
+      "id": 25,
+      "name": "CABLE CONTROL PROFAX PARA MAQUINA LINCOL  LAK-354",
+      "brand": "PROFAX",
+      "price": 50,
+      "icon": "Sparkles",
+      "image": "/images/products/cable-control-profax-para-maquina-lincol-lak-354.jpeg"
+    },
+    {
+      "id": 26,
+      "name": "CONECTOR LENCO LC-40 MEDIA LUNA 350A",
+      "brand": "-",
+      "price": 50,
+      "icon": "ShieldCheck",
+      "image": "/images/products/conector-lenco-lc-40-media-luna-350a.jpeg"
+    },
+    {
+      "id": 27,
+      "name": "APORTE TIG INOX 308L DE 1-8''",
+      "brand": "-",
+      "price": 40,
+      "icon": "Sparkles",
+      "image": "/images/products/aporte-tig-inox-308l-de-1-8-.jpeg"
+    },
+    {
+      "id": 28,
+      "name": "APORTE TIG INOX 316L DE 1-8",
+      "brand": "-",
+      "price": 50,
+      "icon": "Wrench",
+      "image": "/images/products/aporte-tig-inox-316l-de-1-8.jpeg"
+    },
+    {
+      "id": 29,
+      "name": "ALAMBRE TUBULAR E71T-1C",
+      "brand": "-",
+      "price": 20,
+      "icon": "Flame",
+      "image": "/images/products/alambre-tubular-e71t-1c.jpeg"
+    },
+    {
+      "id": 30,
+      "name": "TUNGSTENO LANTANO 2% AZUL 3/322",
+      "brand": "-",
+      "price": 45,
+      "icon": "Sparkles",
+      "image": "/images/products/tungsteno-lantano.jpeg"
+    },
+    {
+      "id": 31,
+      "name": "ALINEADOR DE TUBERIA PIPELINER",
+      "brand": "STILL WELD",
+      "price": 20,
+      "icon": "Flame",
+      "image": "/images/products/alineador-de-tuberia-pipeliner.jpeg"
+    },
+    {
+      "id": 31,
+      "name": "PFX26FV-HD Cabezal TIG Flexible con válvula, 250 A, serie 26",
+      "brand": "PROFAX",
+      "price": 20,
+      "icon": "Flame",
+      "image": "/images/products/pfx26fv-hd-cabezal-tig-flexible-con-válvula-250-a-serie-26.jpeg"
+    },
+    {
+      "id": 32,
+      "name": "CONSUMIBLES MAGUN PRO 400A",
+      "brand": "-",
+      "price": 50,
+      "icon": "Sparkles",
+      "image": "/images/products/consumibles-magun-pro-400a.jpeg"
+    },
+    {
+      "id": 33,
+      "name": "ACCESORIOS Y CONSUMIBLES PARA ANTORCHA PROFAX 400-450A",
+      "brand": "PROFAX",
+      "price": 50,
+      "icon": "Flame",
+      "image": "/images/products/accesorios-y-consumibles-para-antorcha-profax-400-450a.jpeg"
     }
   ]
 }
